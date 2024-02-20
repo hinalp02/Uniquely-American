@@ -1,0 +1,13 @@
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+    - echo "Deploying..."
+  artifacts:
+    paths:
+      - public
+  tags:
+    - Pages
+  only:
+    - main
