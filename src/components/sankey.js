@@ -1,10 +1,9 @@
 import * as d3 from 'd3';
 import { SingleContainer, Sankey, Tooltip } from '@unovis/ts';
-import sankeyData from './sankeyData.js'
+import { SankeyData } from './sankeyData.js'
 
 export default function (element) {
-  const dataModel = sankeyData()
-
+  const dataModel = new SankeyData();
   const chart = new SingleContainer(element, {
     height: 500,
     width: '100%',
@@ -15,7 +14,6 @@ export default function (element) {
     //     // [Sankey.selectors.link]: d => `link ${d.value}`,
     //   },
     // }),
-
     component: new Sankey({
       /* Labels */
       label: n => n.isRootNode ? '' : n.label,
@@ -63,15 +61,14 @@ export default function (element) {
   }, dataModel.data());
 
   function toggleState(n) {
-    console.log('hello??? expandable', n.expandable)
     if (!n.expandable) return;
     if (n.expanded) {
       dataModel.collapse(n);
     } else {
       dataModel.expand(n);
     }
-    // const updatedData = dataModel.data()
-    chart.setData(dataModel.data());
+    const updatedData = dataModel.data()
+    chart.setData(updatedData);
   }
 }
 

@@ -239,32 +239,33 @@ const allNodes = root.descendants().map(n => n.data)
 // Initial data: all nodes with depth 0 or 1
 const nodes = allNodes.filter(n => n.depth <= 1)
 
-export default function data() {
-  this.nodes = nodes
+export class SankeyData {
+  constructor() {
+    this.nodes = nodes;
 
-  this.data = () => {
-    return {
-      nodes: this.nodes,
-      links: this.nodes.flatMap(n => n.subgroupLinks),
+    this.data = () => {
+      return {
+        nodes: this.nodes,
+        links: this.nodes.flatMap(n => n.subgroupLinks),
+      };
     };
+    // Expand the node into its subgroups
+    this.expand = node => {
+      //console.log('expanding', node.subgroups.length, node.nodeColor, node.subgroups)
+      console.log('\nexpandable\n', this.nodes.expandable === true);
+      this.nodes[node._index].expanded = true;
+      this.nodes.push(...node.subgroups);
+
+      //this.links.push(...node.subgroupLinks);
+    };
+    // Collapse the node back to its original state
+    this.collapse = node => {
+      //console.log('collapsing', node.subgroups.length)
+      this.nodes[node._index].expanded = false;
+      this.nodes = this.nodes.filter(n => !n.ancestors.includes(node.id));
+      //this.links = this.links.filter(l => l)
+    };
+
+    return this;
   }
-  // Expand the node into its subgroups
-  this.expand = node => {
-    //console.log('expanding', node.subgroups.length, node.nodeColor, node.subgroups)
-    console.log('\nexpandable\n', this.nodes.expandable === true)
-    this.nodes[node._index].expanded = true;
-    this.nodes.push(...node.subgroups);
-
-    //this.links.push(...node.subgroupLinks);
-  };
-  // Collapse the node back to its original state
-  this.collapse = node => {
-    //console.log('collapsing', node.subgroups.length)
-    this.nodes[node._index].expanded = false;
-    this.nodes = this.nodes.filter(n => !n.ancestors.includes(node.id))
-    //this.links = this.links.filter(l => l)
-  };
-
-  return this
-
 }
