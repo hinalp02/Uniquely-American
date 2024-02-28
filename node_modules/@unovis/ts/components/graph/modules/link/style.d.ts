@@ -1,0 +1,15 @@
+export declare const links: string;
+export declare const variables: void;
+export declare const linkSupport: string;
+export declare const link: string;
+export declare const linkDashed: string;
+export declare const gLink: string;
+export declare const gLinkExit: string;
+export declare const greyout: string;
+export declare const linkBand: string;
+export declare const flowGroup: string;
+export declare const flowCircle: string;
+export declare const labelGroups: string;
+export declare const labelGroup: string;
+export declare const labelCircle: string;
+export declare const labelContent: string;

@@ -1,0 +1,10 @@
+import { StringAccessor } from "../types/accessor";
+import { Rect } from "../types/misc";
+export declare function guid(): string;
+export declare function stringToHtmlId(str: string): string;
+export declare function isStringCSSVariable(s: string): boolean;
+export declare function getCSSVariableValue(s: string, context: HTMLElement | SVGElement): string;
+export declare function getCSSVariableValueInPixels(s: string, context: HTMLElement | SVGElement): number;
+export declare function getPixelValue(v: string | number): number | null;
+export declare function rectIntersect(rect1: Rect, rect2: Rect, tolerancePx?: number): boolean;
+export declare function getHref<T>(d: T, identifier: StringAccessor<T>): string;
