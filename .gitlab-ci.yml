@@ -1,8 +1,12 @@
-image: alpine:latest
+image: node:latest
 
 pages:
   stage: deploy
   script:
+    - echo "Installing dependencies..."
+    - npm install
+    - echo "Building the project..."
+    - npm run build
     - echo "Deploying..."
   artifacts:
     paths:
