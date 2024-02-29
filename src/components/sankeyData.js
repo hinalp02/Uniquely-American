@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import keySet from '../data/grouped-data.json';
 
-// Structure to form the data
+// Structure to form the data for the sankey
 const dataHierarchy = {
   name: "Why Did They Do It?",
   subgroups: [

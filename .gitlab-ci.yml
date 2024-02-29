@@ -15,4 +15,3 @@ pages:
     - Pages
   only:
     - main
-    - seths_branch

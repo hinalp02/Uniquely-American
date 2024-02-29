@@ -1,7 +1,7 @@
-/* * {
+* {
   padding: 0;
   margin: 0;
-} */
+}
 
 body {
   font: 18px/1.5 "Avenir", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
@@ -16,6 +16,8 @@ main {
   justify-content: center;
   margin: 20px;
   color: #222;
+  width: 75%;
+  margin: 0 auto;
 }
 
 #map {
@@ -30,8 +32,8 @@ main {
 header {
   border-bottom: 2px solid #ccc;
   width: 75%;
-  margin: 0 auto;
   background: rgba(255, 255, 255, 0.5);
+  margin: 1em auto;
 }
 
 main {
@@ -73,6 +75,12 @@ header > div {
 
 h1 {
   margin-bottom: 0;
+  justify-content: left;
+  color: #492a7c;
+}
+h3 {
+  justify-content: left;
+  margin-bottom: 0;
   color: #492a7c;
 }
 
@@ -101,6 +109,16 @@ a {
   opacity: 1;
 }
 
-
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 20px;
+}
 
 

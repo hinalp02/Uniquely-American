@@ -53,10 +53,6 @@ export default function (element) {
       heightNormalizationCoeff: 0.5,
       nodePadding: 22,
       iterations: 200,
-
-      onNodeMouseOver: (a) => {
-        console.log("onNodeMouseOver", a)
-      },
     }),
   }, dataModel.data());
 
@@ -71,15 +67,5 @@ export default function (element) {
     chart.setData(updatedData);
   }
 }
-
-// function update(config) {
-//   //console.log(config)
-//   chart.updateComponent(config);
-// }
-// export function toolips(input) {
-//   tooltip.show(`
-//     "DATA"
-// `);
-//  // export function over(config) {
 
 
