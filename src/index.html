@@ -59,6 +59,20 @@
 
     <h3>Motives</h3>
     <div id="sankey"></div>
+
+    <h3> Sunburst </h3>
+    <div id="observablehq-breadcrumb-47c3ba54"></div>
+    <div id="observablehq-viewof-sunburst-47c3ba54"></div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+      import define from "https://api.observablehq.com/d/61b744f04387d52a@624.js?v=4";
+      new Runtime().module(define, name => {
+        if (name === "breadcrumb") return new Inspector(document.querySelector("#observablehq-breadcrumb-47c3ba54"));
+        if (name === "viewof sunburst") return new Inspector(document.querySelector("#observablehq-viewof-sunburst-47c3ba54"));
+      });
+    </script>
   </main>
   <footer>
     <p>
