@@ -1,0 +1,199 @@
+Case #,Shooter Last Name,Shooter First Name,Full Date,Day of Week,Day,Month,Year,Street Number,Street Name,City,State,County,Zip Code,Region,Urban/Suburban/Rural,Metro/Micro Statistical Area Type,Location,Location Specified,Insider or Outsider,Access Required,Accessed Space,Victims Inside / Outside ,Workplace Shooting,Multiple Locations,Other Location Specified,Armed Person on Scene,Number Killed,Number Injured
+Case #,Perpetrator Name,,Date,,,,,Location,,,,,,,,,,,,,,,,,,,Victims,
+1,Whitman,Charles,8/1/66,Monday,1,8,1966,110,Inner Campus Dr,Austin,TX,Travis County,78705,0,0,metropolitan,1,University of Texas,1,2,0,2,0,1,Shooter's home,1,15,31
+2,Smith,Robert,11/12/66,Saturday,12,11,1966,Rose-Mar College of Beauty,N Rose,Mesa,AZ,Maricopa County,85213,3,0,metropolitan,4,Beauty salon,0,0,NA,0,0,0,,0,5,2
+3,Held,Leo,10/23/67,Monday,23,10,1967,599,S Highland St,Lock Haven,PA,Clinton County,17745,2,2,micropolitan,9,Paper mill,1,1,NA,0,1,1,"Victim's home, airport",0,6,6
+4,Pearson,Eric,3/16/68,Saturday,16,3,1968,11703,Lake Rd,Ironwood,MI,Gogebic County,49938,0,2,,5,Bar,0,0,NA,0,0,1,Victim's home ,0,7,2
+5,Lambright,Donald,4/5/69,Saturday,5,4,1969,,I-76,Harrisburg,PA,Chester County,17105,2,0,metropolitan,8,Highway,0,0,NA,1,0,0,,0,4,17
+6,White,Joseph,9/23/70,Wednesday,23,9,1970,Building 12,W. Averell Harriman State Office Campus,Albany,NY,Albany County,12240,2,0,metropolitan,6,Office building,1,1,NA,0,1,0,,0,4,0
+7,McLeod,Harvey Glenn,5/29/72,Monday,29,5,1972,4321,Lassiter At North Hills Ave,Raleigh,NC,Wake County,27609,0,0,metropolitan,4,Mall parking lot,0,0,NA,1,0,0,,0,4,5
+8,Grace,Edwin,6/21/72,Wednesday,21,6,1972,383,Kings Hwy,Cherry Hill,NJ,Camden County,8034,2,1,metropolitan,6,Office building,1,0,NA,0,1,0,,0,6,6
+9,Essex,Mark,1/7/73,Sunday,7,1,1973,4200,Old Gentilly Rd,New Orleans ,LA,Orleans Parish,70126,0,0,metropolitan,7,Hotel,0,0,NA,2,0,1,Grocery store,0,7,8
+10,Sander,Robert,3/2/75,Sunday,2,3,1975,12370,US Hwy 101 N,Smith River,CA,Del Norte County,95567,3,2,micropolitan,7,Motel and parking lot,0,1,NA,2,0,0,,0,5,1
+11,Allaway,Edward,7/12/76,Monday,12,7,1976,800,N State College Blvd,Fullerton,CA,Orange County,92831,3,0,metropolitan,1,"California State University, Fullerton",1,0,NA,0,1,0,,0,7,2
+12,Cowan,Fred,2/14/77,Monday,14,2,1977,55,Weyman Ave,New Rochelle ,NY,Westchester County,10805,2,1,metropolitan,9,Moving company warehouse ,1,1,NA,2,1,0,,0,5,5
+13,Henry,Dewitt,7/23/77,Saturday,23,7,1977,5711,S Sixth St,Klamath Falls,OR,Klamath County,97603,3,2,micropolitan,5,Restaurant outdoor area,0,0,NA,1,0,0,,0,6,2
+14,Benoist,Emile Pierre,8/26/77,Friday,26,8,1977,210,Mountain Ave,Hackettstown ,NJ,Warren County,7840,2,2,metropolitan,8,Railroad tracks,0,0,NA,1,0,0,,0,6,0
+15,Chin,Gan Fong,6/17/78,Saturday,17,6,1978,2099,Post Rd,Warwick,RI,Kent County,2886,2,0,metropolitan,5,Restaurant,1,0,NA,0,1,0,,0,4,0
+16,Chvarak,Barry,2/3/80,Sunday,3,2,1980,9870,Dyer St,El Paso,TX,El Paso County,79924,0,0,metropolitan,5,Bar,0,0,NA,0,0,0,,0,5,3
+17,King,Alvin,6/22/80,Sunday,22,6,1980,202,W W M Watson Blvd,Daingerfield,TX,Morris County,75638,0,2,,3,Baptist church,1,0,NA,0,0,0,,0,5,11
+18,Belmonte,Victor,7/21/80,Monday,21,7,1980,,,Coraopolis,PA,Allegheny County,15108,2,1,metropolitan,8,Road,1,1,NA,1,0,0,,0,4,1
+19,Moore,Lawrence,5/7/81,Thursday,7,5,1981,,Front St NE,Salem,OR,Marion County,97301,3,0,metropolitan,5,Bar,0,0,NA,0,0,0,,0,4,20
+20,Bevins,William,10/16/81,Friday,16,10,1981,Mountain Auto-Truck Parts Store,Mountain Top Rd,Allen,KY,Floyd County,41650,0,2,,4,Auto parts store,0,0,NA,0,0,0,,0,5,3
+21,Meach,Charles,5/3/82,Monday,3,5,1982,1600,Lidia Selkregg Ln,Anchorage ,AK,Anchorage Municipality,99508,3,0,metropolitan,8,Park,0,0,NA,1,0,0,,0,4,0
+22,Parish,John,8/9/82,Monday,9,8,1982,902,Ave N,Grand Prairie,TX,Tarrant County,75050,0,1,metropolitan,9,Trucking warehouse,1,1,NA,0,1,1,Road,0,6,4
+23,Brown,Carl,8/20/82,Friday,20,8,1982,3147,NW North River Dr,Miami,FL,Miami-Dade County,33142,0,0,metropolitan,4,Auto parts store,0,0,NA,2,0,0,,1,8,3
+24,Leacock,Alban,2/3/83,Thursday,3,2,1983,2175,Broadway,Manhattan,NY,New York County,10024,2,0,metropolitan,7,Shooter's home,1,1,NA,0,1,1,Hotel,0,4,1
+25,Hastings,Louis,3/1/83,Tuesday,1,3,1983,,,McCarthy,AK,Copper River Census Area,99566,3,2,,8,Woods,0,0,NA,2,0,1,Victim's home,0,6,2
+26,Moreno,Eliseo,10/11/83,Tuesday,11,10,1983,,,College Station,TX,Brazos County,77840,0,1,metropolitan,7,Victim's home,0,0,NA,2,0,1,"Road, another victim's home",0,6,0
+27,Silka,Michael,5/17/84,Thursday,17,5,1984,,Zitziana River,Manley Hot Springs,AK,Yukon-Koyukuk Census Area,99756,3,2,,8,Woods,0,0,NA,1,0,0,,0,8,1
+28,Belachheb,Abdelkrim,6/29/84,Friday,29,6,1984,I-635,Midway Rd,Dallas,TX,Dallas County,75201,0,0,metropolitan,5,Nightclub,0,0,NA,0,0,0,,0,6,1
+29,Huberty,James,7/18/84,Wednesday,18,7,1984,727,E San Ysidro Blvd,San Ysidro,CA,San Diego County,92173,3,2,metropolitan,5,Restaurant,0,0,NA,0,0,0,,0,21,19
+30,Crossley,Wayne,7/24/84,Tuesday,24,7,1984,1127,Central Ave,Hot Springs National Park,AR,Garland County,71901,0,1,metropolitan,5,Bar in a motel,1,0,NA,0,0,1,Road,0,5,1
+31,Hammett,Mansel,3/16/85,Saturday,16,3,1985,1926,Baldridge Ave,South Connellsville,PA,Fayette County,15425,2,2,metropolitan,9,Glass-making factory,1,2,1,0,1,0,,0,4,2
+32,Sherrill,Patrick,8/20/86,Wednesday,20,8,1986,200,N Broadway,Edmond,OK,Oklahoma County,73034,0,1,metropolitan,10,Post office,1,1,NA,0,1,0,,0,14,6
+33,Cruse,William,4/23/87,Thursday,23,4,1987,4711,NE Babcock St,Palm Bay,FL,Brevard County,32905,0,1,metropolitan,4,Grocery store,0,0,NA,2,0,1,Victim's driveway,0,6,14
+34,Farley,Richard,2/16/88,Tuesday,16,2,1988,495,E Java Dr,Sunnyvale ,CA,Santa Clara County,94089,3,0,metropolitan,6,Office building,1,2,1,0,1,0,,0,7,4
+35,Hayes,Michael,7/17/88,Sunday,17,7,1988,3336,Old Salisbury Rd,Winston Salem,NC,Forsyth County,27127,0,2,metropolitan,8,Road,1,1,NA,1,0,0,,0,4,5
+36,Henderson,Clemmie,9/22/88,Thursday,22,9,1988,1310,S Ashland Ave,Chicago   ,IL,Cook County,60608,1,0,metropolitan,4,Auto parts store,0,0,NA,2,0,1,Elementary school,1,4,2
+37,Purdy,Patrick,1/17/89,Tuesday,17,1,1989,20,E Fulton St,Stockton,CA,San Joaquin County,95204,3,2,metropolitan,0,Elementary school playground,0,0,NA,0,0,0,,0,5,30
+38,Wesbecker,Joseph,9/14/89,Thursday,14,9,1989,643,S 6th St,Louisville,KY,Jefferson County,40202,0,0,metropolitan,9,Printing plant,1,1,NA,0,1,0,,0,9,12
+39,Pough,James,6/18/90,Monday,18,6,1990,7870,Baymeadows Way,Jacksonville,FL,Duval County,32256,0,0,metropolitan,4,Car loan store,0,0,NA,2,0,1,"Road, parking lot",0,11,6
+40,Harris,Joseph,10/10/91,Thursday,10,10,1991,143,E Ridgewood Ave,Ridgewood,NJ,Bergen County,7450,2,1,metropolitan,10,Post office,1,2,1,0,1,1,Victim's home,0,4,0
+41,Hennard,George,10/16/91,Wednesday,16,10,1991,1705,E Central Texas Expy,Killeen,TX,Bell County,76541,0,2,metropolitan,5,Restaurant,0,0,NA,0,0,0,,0,23,22
+42,Lu,Gang,11/1/91,Friday,1,11,1991,203,Van Allen Hall,Iowa City ,IA,Johnson County,52242,1,1,metropolitan,1,University of Iowa,1,1,NA,0,0,0,,0,5,1
+43,Daigneau,Robert,11/9/91,Saturday,9,11,1991,,,Harrodsburg,KY,Mercer County,40330,0,2,,8,Car in road,0,0,NA,1,0,0,,0,4,0
+44,McIlvane,Thomas,11/14/91,Thursday,14,11,1991,200,W 2nd St,Royal Oak,MI,Oakland County,48068,1,1,metropolitan,10,Post office,1,2,0,0,1,0,,0,4,6
+45,Rogovich,Pete,3/15/92,Sunday,15,3,1992,4139,E McDowell Rd,Phoenix,AZ,Maricopa County,85008,3,0,metropolitan,8,Outside of an apartment complex and trailer park,0,1,NA,2,0,1,Convenience store,0,4,0
+46,Houston,Eric,5/1/92,Friday,1,5,1992,4446,Olive Ave,Olivehurst,CA,Yuba County,95961,3,2,metropolitan,0,High school,1,0,NA,0,0,0,,0,4,10
+47,Miller,John,10/15/92,Thursday,15,10,1992,105,9th St,Watkins Glen,NY,Schuyler County,14891,2,2,,2,County government office building,0,0,NA,0,0,0,,0,4,0
+48,Drake III,Lynwood,11/8/92,Sunday,8,11,1992,1144,Black Oak Dr,Paso Robles,CA,San Luis Obispo County,93446,3,1,metropolitan,5,Card playing club,0,0,NA,0,0,1,Victim's home,0,6,1
+49,Ferri,Gian,7/1/93,Thursday,1,7,1993,101,California St,San Francisco,CA,San Francisco County,94111,3,0,metropolitan,6,Law firm office,0,0,NA,0,1,0,,0,8,6
+50,French,Kenneth,8/6/93,Friday,6,8,1993,528,N McPherson Church Rd,Fayetteville,NC,Cumberland County,28303,0,0,metropolitan,5,Restaurant ,0,2,0,0,0,0,,0,4,7
+51,Buquet,James,10/14/93,Thursday,14,10,1993,850,Arnele Ave,El Cajon,CA,San Diego County,92020,3,1,metropolitan,4,Health club,1,2,1,2,0,0,,0,4,2
+52,Winterbourne,Alan,12/2/93,Thursday,2,12,1993,4839,Market St,Oxnard,CA,Ventura County,93003,3,1,metropolitan,6,State employment office,0,2,1,0,1,1,Road,0,4,5
+53,Ferguson,Colin,12/7/93,Tuesday,7,12,1993,,Merillon Ave,Garden City Park,NY,Nassau County,11530,2,0,metropolitan,8,Train car,0,1,NA,0,0,0,,0,6,19
+54,Dunlap,Nathan,12/14/93,Tuesday,14,12,1993,12293,E Iliff Ave,Aurora,CO,Arapahoe County,80014,3,1,metropolitan,5,Restaurant,1,0,NA,0,1,0,,0,4,1
+55,Mellberg,Dean,6/20/94,Monday,20,6,1994,701,Hospital Loop,Fairchild Air Force Base,WA,Spokane County,99011,3,0,metropolitan,2,Air Force base hospital,1,1,NA,2,1,0,,1,4,23
+56,Ferguson,Rodriguez,12/31/94,Saturday,31,12,1994,,"Puppy Creek Family Fun Center, Zodiac Club",Raeford,NC,Hoke County,28376,0,2,,4,Recreation center,0,0,0,2,0,1,Outside of a nightclub,0,5,1
+57,Simpson,James,4/3/95,Monday,3,4,1995,2535,Rand Morgan Rd,Corpus Christi,TX,Nueces County,78410,0,0,metropolitan,9,Refinery inspection company,1,1,NA,0,1,0,,0,5,0
+58,Woods,Willie,7/19/95,Wednesday,19,7,1995,555,Ramirez St,Los Angeles,CA,Los Angeles County,90012,3,0,metropolitan,2,City technical center,1,1,NA,0,1,0,,0,4,0
+59,Vernon,Michael,12/19/95,Tuesday,19,12,1995,2186,White Plains Rd,Bronx,NY,Bronx County,10462,2,0,metropolitan,4,Shoe store,0,0,NA,0,0,0,,0,5,3
+60,McCree,Clifton,2/9/96,Friday,9,2,1996,,E Las Olas Blvd.,Fort Lauerdale ,FL,Broward County,33301,0,0,metropolitan,2,City office trailer,1,1,NA,2,1,0,,0,5,1
+61,Tornes,Kenneth,4/24/96,Wednesday,24,4,1996,555,S West St,Jackson,MS,Hinds County,39201,0,0,metropolitan,6,Fire station,1,1,NA,0,1,1,Shooter and victim's home,1,5,3
+62,Drega,Carl,8/19/97,Tuesday,19,8,1997,64,Trooper Les Lord Mem Hwy,Colebrook,NH,Coos County,3576,2,2,micropolitan,6,Newspaper and city judge office,0,0,NA,2,0,1,Store parking lot,1,4,4
+63,Wise,Hastings Arthur,9/15/97,Monday,15,9,1997,2063,University Pkwy,Aiken ,SC,Aiken County,29801,0,0,metropolitan,9,Manufacturing plant ,1,2,1,2,1,0,,0,4,3
+64,Serrano,Nelson,12/3/97,Wednesday,3,12,1997,1520,Centennial Blvd,Bartow,FL,Polk County,33830,0,1,metropolitan,9,Manufacturing plant ,1,2,2,0,1,0,,0,4,0
+65,Torres,Arturo,12/18/97,Thursday,18,12,1997,1808,N Batavia St,Orange,CA,Orange County,92865,3,1,metropolitan,9,Maintenance yard trailer,1,2,0,1,1,0,,0,4,3
+66,Beck,Matthew,3/6/98,Friday,6,3,1998,777,Brook St,Rocky Hill,CT,Hartford County,6067,2,1,metropolitan,6,Lottery office building,1,1,NA,2,1,0,,0,4,0
+67,Golden,Andrew,3/24/98,Tuesday,24,3,1998,1800,Highway 91 W,Jonesboro ,AR,Craighead County,72404,0,2,metropolitan,0,Outside of a middle school,1,0,NA,1,0,0,,0,5,10
+68,Johnson,Mitchell,3/24/98,Tuesday,24,3,1998,1800,Highway 91 W,Jonesboro,AR,Craighead County,72404,0,2,metropolitan,0,Outside of a middle school,1,0,NA,1,0,0,,0,5,10
+69,Kinkel,Kipland,5/20/98,Wednesday,20,5,1998,333,58th St,Springfield,OR,Lane County,97478,3,1,metropolitan,0,High school,1,1,NA,0,0,1,Shooter and victim's home,0,4,25
+70,Miller,Shon,3/10/99,Wednesday,10,3,1999,1615,W Toby Ave,Gonzales,LA,Ascension Parish,70737,0,2,metropolitan,3,Baptist church,1,0,NA,2,0,1,Car in victim's home driveway,0,4,4
+71,Klebold,Dylan,4/20/99,Tuesday,20,4,1999,6201,S Pierce St,Littleton,CO,Jefferson County,80123,3,1,metropolitan,0,High school,1,1,NA,0,0,0,,0,13,23
+72,Harris,Eric,4/20/99,Tuesday,20,4,1999,6201,S Pierce St,Littleton,CO,Jefferson County,80123,3,1,metropolitan,0,High school,1,1,NA,0,0,0,,0,13,23
+73,Floyd,Zane,6/3/99,Thursday,3,6,1999,1300,E Flamingo Rd,Las Vegas,NV,Clark County,89119,3,0,metropolitan,4,Grocery store,0,0,NA,0,0,0,,0,4,1
+74,Barton,Mark,7/29/99,Thursday,29,7,1999,3500,Piedmont Rd NE,Atlanta,GA,Fulton County,30305,0,0,metropolitan,6,Day trading firm,1,1,NA,0,1,1,Shooter and victim's home,0,12,13
+75,Ashbrook,Larry,9/15/99,Wednesday,15,9,1999,5522,Whitman Ave,Fort Worth,TX,Tarrant County,76133,0,0,metropolitan,3,Baptist church,0,0,NA,0,0,0,,0,7,7
+76,Uyesugi,Byran,11/2/99,Tuesday,2,11,1999,700,Bishop St,Honolulu,HI,Honolulu County,96813,3,0,metropolitan,6,Xerox office building,1,1,NA,0,1,0,,0,7,0
+77,Izquierdo-Leyva,Silvio,12/30/99,Thursday,30,12,1999,7700,Courtney Campbell Cswy,Tampa,FL,Hillsborough County,33607,0,0,metropolitan,7,Hotel,1,0,NA,2,1,1,Car,0,5,3
+78,Harris,Robert,3/20/00,Monday,20,3,2000,3311,N Belt Line Rd,Irving,TX,Dallas County,75062,0,0,metropolitan,4,Car wash,1,1,NA,0,1,0,,0,5,1
+79,Baumhammers,Richard,4/28/00,Friday,28,4,2000,1980,Park Manor Blvd,Pittsburgh,PA,Allegheny County,15205,2,1,metropolitan,5,Grocery store,0,0,NA,2,0,1,"Victim's home, synagogue, karate school, restaurant ",0,5,1
+80,McDermott,Michael,12/26/00,Tuesday,26,12,2000,200,Harvard Mill Sq,Wakefield,MA,Middlesex County,1880,2,1,metropolitan,6,Office building,1,1,NA,0,1,0,,0,7,0
+81,Park,Ki Yung,1/9/01,Tuesday,9,1,2001,9889,Harwin Dr,Houston,TX,Harris County,77036,0,0,metropolitan,4,Trading store,0,0,NA,0,1,1,Shooter's convenience store,0,4,0
+82,Baker,William,2/5/01,Monday,5,2,2001,2701,Navistar Dr,Lisle,IL,Dupage County,60532,1,1,metropolitan,9,Manufacturing plant ,1,2,1,0,1,0,,0,4,4
+83,Stagner,Steven,7/3/01,Tuesday,3,7,2001,1320,Rail Ave,Rifle,CO,Garfield County,81650,3,2,micropolitan,4,Grocery store parking lot,0,0,NA,1,0,0,,0,4,3
+84,Ferguson,Joseph,9/8/01,Saturday,8,9,2001,2710,Ramp Way,Sacramento,CA,Sacramento County,95818,3,0,metropolitan,8,Equipment yard,1,1,NA,2,1,1,"Victim's home, marina, road",0,5,2
+85,Lockey,William,3/22/02,Friday,22,3,2002,2323,Foundation Dr,South Bend,IN,St. Joseph County,46628,1,0,metropolitan,9,Manufacturing plant ,1,1,NA,0,1,1,Road,0,4,5
+86,Patterson,Emanuel Burl,2/25/03,Tuesday,25,2,2003,2709,Governors Dr SW,Huntsville,AL,Madison County,35805,0,0,metropolitan,6,Employment agency office,1,0,NA,0,1,1,Shooter's apartment building,0,4,1
+87,Williams,Doug,7/8/03,Tuesday,8,7,2003,5017,Lockheed Dr,Meridian ,MS,Lauderdale County,39301,0,0,micropolitan,9,Manufacturing plant ,1,1,NA,0,1,0,,0,6,8
+88,Tapia,Salvador,8/27/03,Wednesday,27,8,2003,3918,S Wallace St,Chicago,IL,Cook County,60609,1,0,metropolitan,9,Auto parts warehouse,1,2,1,0,1,0,,0,6,0
+89,Reeves,Ralph,10/24/03,Tuesday,24,10,2003,313,N State Ave,Oldtown,ID,Bonner County,83822,3,2,micropolitan,5,Bar,0,0,NA,0,0,0,,0,4,0
+90,Brown,Elijah,7/2/04,Friday,2,7,2004,4612,Speaker Rd,Kansas City ,KS,Wyandotte County,66106,1,0,metropolitan,9,Meatpacking plant,1,1,NA,0,1,0,,0,5,2
+91,Vang,Chai,11/21/04,Sunday,21,11,2004,,,Birchwood,WI,Washburn County,54817,1,2,,8,Woods (private lot),0,2,0,1,0,0,,1,6,2
+92,Gale,Nathan,12/8/04,Wednesday,8,12,2004,5055,Sinclair Rd,Columbus,OH,Franklin County,43229,1,0,metropolitan,5,Nightclub,0,1,NA,0,0,0,,0,4,2
+93,Nichols,Brian,3/11/05,Friday,11,3,2005,136,Pryor St SW,Atlanta,GA,Fulton County,30303,0,0,metropolitan,2,Courthouse,0,1,NA,2,0,1,"Car, victim's apartment",1,4,3
+94,Ratzmann,Terry,3/12/05,Saturday,12,3,2005,375,S Moorland Rd,Brookfield,WI,Waukesha County,53005,1,1,metropolitan,3,Christian church,1,1,NA,0,0,0,,0,7,4
+95,Weise,Jeffrey,3/21/05,Monday,21,3,2005,23990,MN 1,Red Lake,MN,Beltrami County,56671,1,2,micropolitan,0,High school,1,1,NA,0,0,1,Shooter and victim's home,0,9,7
+96,Cranshaw,Freddy,8/28/05,Sunday,28,8,2005,11330,FM-100,Honey Grove,TX,Fannin County,75446,0,2,micropolitan,3,Christian churchyard,0,0,NA,1,0,1,"Car, shooter's home",0,4,0
+97,San Marco,Jennifer,1/30/06,Monday,30,1,2006,400,Storke Rd,Goleta,CA,Santa Barbara County,93199,3,1,metropolitan,10,Post office,1,2,1,2,1,1,Victim's home,0,7,0
+98,Huff,Kyle Aaron,3/25/06,Saturday,25,3,2006,2112,E Republican St,Seattle,WA,King County,98112,3,0,metropolitan,7,Home (party site),0,1,NA,2,0,0,,0,6,2
+99,Bell,Anthony,5/21/06,Sunday,21,5,2006,1935,Dallas Dr,Baton Rouge,LA,East Baton Rouge Parish,70806,0,0,metropolitan,3,Christian church,0,0,NA,2,0,1,Apartment parking lot,0,5,1
+100,Roberts,Charles,10/2/06,Monday,2,10,2006,4876,White Oak Rd,Paradise,PA,Lancaster County,17562,2,2,metropolitan,0,One-room schoolhouse ,0,2,0,0,0,0,,0,5,5
+101,Talovic,Sulejman,2/12/07,Monday,12,2,2007,602,S 700 E,Salt Lake City,UT,Salt Lake County,84102,3,0,metropolitan,4,Mall ,0,0,NA,2,0,0,,1,5,4
+102,Cho,Seung-Hui,4/16/07,Monday,16,4,2007,494,Old Turner St,Blacksburg,VA,Montgomery County,24061,0,2,metropolitan,1,University ,1,1,NA,0,0,1,University residence hall,0,32,26
+103,Hawkins,Robert,12/5/07,Wednesday,5,12,2007,1000,California St,Omaha,NE,Douglas County,68114,1,0,metropolitan,4,Department store in a mall,0,0,NA,0,0,0,,0,8,5
+104,Murray,Matthew,12/9/07,Sunday,9,12,2007,12750,W 63rd Ave,Arvada,CO,Jefferson County,80004,3,1,metropolitan,3,Christian church parking lot,1,0,NA,2,0,1,Christian missionary training center,1,4,5
+105,Thornton,Charles,2/7/08,Thursday,7,2,2008,139,S Kirkwood Rd,Kirkwood,MO,St. Louis County,63122,1,1,metropolitan,2,City hall,0,0,NA,2,0,0,,1,6,1
+106,Kazmierczak,Steven,2/14/08,Thursday,14,2,2008,Cole Hall,University Cir Dr,Dekalb ,IL,Dekalb County,60115,1,0,metropolitan,1,University,1,0,NA,0,0,0,,0,5,21
+107,Leeds,Lee,3/18/08,Tuesday,18,3,2008,1500,Black Rd,Santa Maria,CA,Santa Barbara County,93458,3,0,metropolitan,9,Auto salvage yard,1,1,NA,2,1,0,,0,4,0
+108,Higdon,Wesley,6/25/08,Wednesday,25,6,2008,390,Community Dr,Henderson,KY,Henderson County,42420,0,2,metropolitan,9,Factory,1,1,NA,2,1,0,,0,5,1
+109,Zamora,Isaac,9/2/08,Tuesday,2,9,2008,19300 Block,Bridle Pl,Alger,WA,Skagit County,98284,3,2,metropolitan,8,Rural neighborhood,0,0,NA,1,0,1,Road,0,6,4
+110,Stewart,Robert,3/29/09,Sunday,29,3,2009,801,Pinehurst Ave,Carthage,NC,Moore County,28327,0,2,micropolitan,7,Nursing home,0,2,0,2,0,0,,0,8,3
+111,Wong,Jiverly,4/3/09,Friday,3,4,2009,131,Front St,Binghamton,NY,Broome County,13905,2,1,metropolitan,2,Immigration services center ,1,0,NA,0,0,0,,0,13,4
+112,Gonzalez,Marcos,11/1/09,Sunday,1,11,2009,729,Worth St,Mount Airy,NC,Surry County,27030,0,2,micropolitan,4,Appliance store parking lot,0,0,NA,1,0,0,,0,4,0
+113,Hasan,Nidal,11/5/09,Thursday,5,11,2009,133,E 761st Tank Battalion Ave,Fort Hood,TX,Bell County,76544,0,0,metropolitan,2,Army base medical center,1,1,NA,0,1,0,,0,13,32
+114,Clemmons,Maurice,11/29/09,Sunday,29,11,2009,11401,Steele St S,Parkland,WA,Pierce County,98444,3,1,metropolitan,5,Coffee shop,0,0,NA,0,0,0,,1,4,0
+115,Galstyan,Nerses,4/3/10,Saturday,3,4,2010,11651,Riverside Dr,North Hollywood,CA,Los Angeles County,91602,3,0,metropolitan,5,Restaurant,0,0,NA,0,0,0,,1,4,2
+116,Regalado,Gerardo,6/6/10,Sunday,6,6,2010,495,E 49th St,Hialeah ,FL,Miami-Dade County,33013,0,0,metropolitan,5,Restaurant,0,0,NA,2,0,0,,0,4,3
+117,Thornton,Omar,8/3/10,Tuesday,3,8,2010,131,Chapel Rd,Manchester ,CT,Hartford County,6042,2,1,metropolitan,9,Beer warehouse ,1,1,NA,0,1,0,,0,8,2
+118,Neace,Stanley,9/11/10,Saturday,11,9,2010,2401,Quicksand Creek Rd,Jackson,KY,Breathitt County,41339,0,2,,7,Mobile home park,0,2,1,0,0,0,,0,5,0
+119,Loughner,Jared,1/8/11,Saturday,8,1,2011,7100,N Oracle Rd,Tucson ,AZ,Pima County,85704,3,0,metropolitan,4,Supermarket parking lot,0,0,NA,1,0,0,,0,6,13
+120,Hance,Michael,8/7/11,Sunday,7,8,2011,804,Minota Ave,Akron,OH,Summit County,44306,1,1,metropolitan,7,Victim's home,0,2,2,0,0,1,"Other homes, neighborhood street",1,7,1
+121,Sencion,Eduardo,9/6/11,Tuesday,6,9,2011,3883,S Carson St,Carson City,NV,Carson City,89701,3,1,metropolitan,5,Restaurant,0,0,NA,2,0,0,,1,4,7
+122,Dekraai,Scott,10/12/11,Wednesday,12,10,2011,500,Pacific Coast Hwy,Seal Beach,CA,Orange County,90740,3,1,metropolitan,4,Hair salon,0,0,NA,2,0,0,,0,8,1
+123,Goh,One,4/2/12,Monday,2,4,2012,7900,Oakport St,Oakland,CA,Alameda County,94621,3,0,metropolitan,1,University,1,1,NA,0,0,0,,0,7,3
+124,Stawicki,Ian,5/30/12,Wednesday,30,5,2012,5828,Roosevelt Way NE,Seattle ,WA,King County,98105,3,0,metropolitan,5,Bar/coffee shop,1,0,NA,2,0,1,Town hall parking lot,0,5,1
+125,Holmes,James,7/20/12,Friday,20,7,2012,14300,E Alameda Ave,Aurora,CO,Arapahoe County,80012,3,0,metropolitan,4,Movie theater,0,0,NA,0,0,0,,0,12,70
+126,Page,Wade,8/5/12,Sunday,5,8,2012,7512,S Howell Ave,Oak Creek,WI,Milwaukee County,53154,1,1,metropolitan,3,Sikh temple,0,0,NA,2,0,0,,0,6,3
+127,Engeldinger,Andrew,9/27/12,Thursday,27,9,2012,2322,Chestnut Ave,Minneapolis ,MN,Hennepin County,55405,1,0,metropolitan,9,Sign manufacturing factory,1,1,NA,2,1,0,,0,6,2
+128,Lanza,Adam,12/14/12,Friday,14,12,2012,12,Dickinson Dr,Sandy Hook,CT,Fairfield County,6482,2,1,metropolitan,0,Elementary school ,1,2,2,0,0,1,Shooter and victim's home,0,27,1
+129,Myers,Kurt,3/13/13,Wednesday,13,3,2013,101,S Main St,Herkimer,NY,Herkimer County,13350,2,2,metropolitan,4,Barber shop,0,0,NA,0,0,1,"Car service center, abandoned bar",0,4,2
+130,Clark III,Dennis,4/21/13,Sunday,21,4,2013,33311,18th Ln S,Federal Way ,WA,King County,98003,3,0,metropolitan,7,Apartment complex and parking lot,1,1,NA,2,0,0,,0,4,0
+131,Zawahri,John,6/7/13,Friday,7,6,2013,1900,Pico Blvd,Santa Monica,CA,Los Angeles County,90405,3,0,metropolitan,1,University library,1,0,NA,2,0,1,Shooter and victim's home,0,5,3
+132,Vargas,Pedro,7/26/13,Friday,26,7,2013,1485,W 46th St,Hialeah,FL,Miami-Dade County,33012,0,0,metropolitan,7,Apartment complex and nearby street,0,2,1,2,0,0,,0,6,0
+133,Alexis,Aaron,9/16/13,Monday,16,9,2013,601,M St SE,Washington D.C.,DC,District of Columbia,20001,0,0,metropolitan,2,Navy Yard,1,1,NA,0,1,0,,1,12,8
+134,Rhoades,Cherie Lash,2/20/14,Thursday,20,2,2014,300,W 1st St,Alturas,CA,Modoc County,96101,3,2,,2,Tribal headquarters,1,1,NA,0,0,0,,0,4,2
+135,Rodger,Elliot,5/23/14,Friday,23,5,2014,839,Embarcadero Del Norte,Isla Vista ,CA,Santa Barbara County,93117,3,1,metropolitan,1,Outside of a university sorority house,0,0,NA,2,0,1,"Shooter and victim's home, deli, road",0,6,14
+136,Fryberg,Jaylen,10/24/14,Friday,24,10,2014,5611,108th St NE,Marysville ,WA,Snohomish County,98271,3,0,metropolitan,0,High school,1,1,NA,0,0,0,,0,4,3
+137,Roof,Dylann,6/17/15,Wednesday,17,6,2015,110,Calhoun St,Charleston ,SC,Charleston County,29401,0,0,metropolitan,3,Methodist church,0,0,NA,0,0,0,,0,9,1
+138,Abdulazeez,Mohammad,7/16/15,Thursday,16,7,2015,4051,Amnicola Hwy,Chattanooga,TN,Hamilton County,37406,0,0,metropolitan,2,Navy Reserve center,0,2,1,2,0,1,Military recruiting center,1,5,2
+139,Harper-Mercer,Chris,10/1/15,Thursday,1,10,2015,1140,Umpqua College Rd,Roseburg ,OR,Douglas County,97470,3,2,micropolitan,1,Community college,1,1,NA,0,0,0,,0,9,8
+140,Hudson,William,11/14/15,Saturday,14,11,2015,,,Tennessee Colony,TX,Anderson County,75861,0,2,,8,Woods (private lot),1,1,NA,1,0,1,RV parked at campsite,0,6,0
+141,Farook,Syed Rizwan,12/2/15,Wednesday,2,12,2015,1365,S Waterman Ave,San Bernardino,CA,San Bernardino County,92408,3,0,metropolitan,2,County Department of Public Health event,1,1,NA,2,1,1,Road,0,14,24
+142,Malik,Tashfeen,12/2/15,Wednesday,2,12,2015,1365,S Waterman Ave,San Bernardino,CA,San Bernardino County,92408,3,0,metropolitan,2,County Department of Public Health event,1,1,NA,2,1,1,Road,0,14,24
+143,Dalton,Jason,2/20/16,Saturday,20,2,2016,5581,Cracker Barrel Blvd,Kalamazoo,MI,Kalamazoo County,49009,1,0,metropolitan,5,Restaurant parking lot,0,0,NA,1,0,1,"Car dealership parking lot, apartment parking lot",0,6,2
+144,Mateen,Omar,6/12/16,Sunday,12,6,2016,1912,S Orange Ave,Orlando ,FL,Orange County,32806,0,0,metropolitan,5,Nightclub,0,0,NA,0,0,0,,0,49,53
+145,Johnson,Micah,7/7/16,Thursday,7,7,2016,801,Main St,Dallas,TX,Dallas County,75202,0,0,metropolitan,8,Road,0,0,NA,2,0,1,Community college,1,5,11
+146,Cetin,Arcan,9/23/16,Friday,23,9,2016,201,Cascade Mall Dr,Burlington,WA,Skagit County,98233,3,1,metropolitan,4,Department store in a mall,0,0,NA,0,0,0,,0,5,0
+147,Santiago,Esteban,1/6/17,Friday,6,1,2017,100,Terminal Dr,Fort Lauderdale,FL,Broward County,33315,0,0,metropolitan,4,Airport,0,1,NA,0,0,0,,1,5,43
+148,Barber,Briddell,2/6/17,Monday,6,2,2017,263,W 11th St,Yazoo City,MS,Yazoo County,39194,0,2,metropolitan,5,Nightclub parking lot,0,0,NA,1,0,0,,0,4,0
+149,Vang,Nengmy,3/22/17,Wednesday,22,3,2017,1133,E Grand Ave,Rothschild,WI,Marathon County,54474,1,1,metropolitan,4,Bank,0,0,NA,2,0,1,"Law office, apartment parking lot",0,4,0
+150,Neumann,John,6/5/17,Monday,5,6,2017,2427,N Forsyth Rd,Orlando ,FL,Orange County,32807,0,0,metropolitan,9,Factory,1,2,0,0,1,0,,0,5,0
+151,Paddock,Stephen,10/1/17,Sunday,1,10,2017,3950,S Las Vegas Blvd,Las Vegas ,NV,Clark County,89119,3,0,metropolitan,8,Music festival,0,1,NA,1,0,0,,1,60,867
+152,Kelley,Devin Patrick,11/5/17,Sunday,5,11,2017,216,4th St,Sutherland Springs,TX,Wilson County,78160,0,2,metropolitan,3,Baptist church,0,0,NA,2,0,0,,0,25,20
+153,Neal,Kevin Janson,11/14/17,Tuesday,14,11,2017,17357,Stagecoach Rd,Rancho Tehama Reserve,CA,Tehama County,96021,3,2,micropolitan,7,Mobile home park,1,1,NA,2,0,1,"Cars on road, elementary school",1,5,18
+154,O'Brien Smith,Timothy,1/28/18,Sunday,28,1,2018,1334,Indian Creek Valley Rd,"Melcroft, Saltlick Township",PA,Fayette County,15462,2,2,metropolitan,4,Car wash,0,0,NA,1,0,0,,0,4,1
+155,Cruz,Nikolas,2/14/18,Wednesday,14,2,2018,5901,Pine Island Rd,Parkland,FL,Broward County,33076,0,1,metropolitan,0,High school,1,2,0,0,0,0,,1,17,17
+156,Davis,George,2/26/18,Monday,26,2,2018,8940,Fenkell St,Detroit,MI,Wayne County,48238,1,0,metropolitan,4,Gas station (in cars),0,0,NA,2,0,1,Victim's home,0,4,0
+157,Reinking,Travis,4/22/18,Sunday,22,4,2018,3571,Murfreesboro Pike,Antioch,TN,Davidson County,37013,0,0,metropolitan,5,Restaurant ,0,0,NA,2,0,0,,0,4,4
+158,Pagourtzis,Dimitrios,5/18/18,Friday,18,5,2018,16000,Hwy 6,Santa Fe,TX,Galveston County,77517,0,1,metropolitan,0,High school,1,1,NA,0,0,0,,1,10,13
+159,Ramos,Jarrod,6/28/18,Thursday,28,6,2018,888,Bestgate Rd,Annapolis,MD,Anne Arundel County,21401,0,0,metropolitan,6,Newspaper office building,0,2,1,0,0,0,,0,5,3
+160,Casarez,Javier,9/12/18,Wednesday,12,9,2018,660,Manwell Blvd,Bakersfield,CA,Kern County,93307,3,0,metropolitan,9,Trucking warehouse,1,2,2,0,1,1,Victim's home,0,5,0
+161,Bowers,Robert,10/27/18,Saturday,27,10,2018,5898,Wilkins Ave,Pittsburgh,PA,Allegheny County,15217,2,0,metropolitan,3,Synagogue ,0,0,NA,0,0,0,,0,11,6
+162,Long,Ian David,11/7/18,Wednesday,7,11,2018,99,Rolling Oaks Dr,Thousand Oaks,CA,Ventura County,91361,3,1,metropolitan,5,Bar,0,0,NA,0,0,0,,0,12,21
+163,Xaver,Zephen,1/23/19,Wednesday,23,1,2019,1901,US 27 S,Sebring ,FL,Highlands County,33870,0,2,metropolitan,4,Bank,0,0,NA,0,0,0,,0,5,0
+164,Martin,Gary,2/15/19,Friday,15,2,2019,401,S Highland Ave,Aurora,IL,Kane County,60506,1,0,metropolitan,9,Manufacturing plant ,1,1,NA,2,1,0,,0,5,7
+165,Craddock,DeWayne,5/31/19,Friday,31,5,2019,2425,Nimmo Pkwy,Virginia Beach,VA,Virginia Beach City,23456,0,0,metropolitan,6,Office building,1,0,NA,2,1,0,,0,12,4
+166,Crusius,Patrick,8/3/19,Saturday,3,8,2019,7101,Gateway Blvd W,El Paso,TX,El Paso County,79925,0,0,metropolitan,4,Grocery store ,0,0,NA,2,0,0,,0,23,26
+167,Betts,Connor,8/4/19,Sunday,4,8,2019,430,E 5th St,Dayton,OH,Montgomery County,45402,1,0,metropolitan,5,Street in front of bar,0,0,NA,1,0,0,,1,9,27
+168,Ator,Seth,8/31/19,Saturday,31,8,2019,42,S D St,Midland-Odessa,TX,Midland County,79701,0,0,metropolitan,8,Cars in road,0,0,NA,1,0,1,Movie theater parking lot,0,7,23
+169,Alatorre,Javier,10/6/19,Sunday,6,10,2019,1013,Central Ave,Kansas City ,KS,Wyandotte County,66102,1,0,metropolitan,5,Bar,1,1,NA,0,0,0,,0,4,5
+170,Villanueva Morales,Hugo,10/6/19,Sunday,6,10,2019,1013,Central Ave,Kansas City ,KS,Wyandotte County,66102,1,0,metropolitan,5,Bar,1,1,NA,0,0,0,,0,4,5
+171,Anderson,David,12/10/19,Tuesday,10,12,2019,223,Martin Luther King Jr Dr,Jersey City,NJ,Hudson County,7305,2,0,metropolitan,4,Grocery store,0,0,NA,2,0,1,Cemetery,0,4,3
+172,Graham,Francine,12/10/19,Tuesday,10,12,2019,224,Martin Luther King Jr Dr,Jersey City,NJ,Hudson County,7305,2,0,metropolitan,4,Grocery store,0,0,NA,2,0,1,Cemetery,0,4,3
+173,Ferrill,Anthony,2/26/20,Wednesday,26,2,2020,4115,W State St,Milwaukee,WI,Milwaukee County,53208,1,0,metropolitan,9,Manufacturing plant ,1,1,NA,0,1,0,,0,5,0
+174,Roman,Joaquin,3/15/20,Sunday,15,3,2020,2885,E Chestnut Expy,Springfield,MO,Greene County,65802,1,0,metropolitan,4,Convenience store,0,0,NA,2,0,1,Cars in road,0,4,3
+175,Nightengale,Jason,1/9/21,Saturday,9,1,2021,5035,SE End Ave,Chicago,IL,Cook County,60615,1,0,metropolitan,7,Apartment complex,0,2,0,2,0,1,"Cars, convenience store, restaurant",0,5,3
+176,Long,Robert,3/16/21,Tuesday,16,3,2021,1916,Piedmont Rd NE,Atlanta,GA,Fulton County,30324,0,0,metropolitan,4,Spa,0,0,NA,0,0,1,Spas,0,8,1
+177,Alissa,Ahmad Al Aliwi,3/22/21,Monday,22,3,2021,3600,Table Mesa Dr,Boulder,CO,Boulder County,80305,3,0,metropolitan,4,Grocery store,0,0,NA,0,0,0,,0,10,1
+178,Gaxiola Gonzalez,Aminadab,3/31/21,Wednesday,31,3,2021,202,W Lincoln Ave,Orange,CA,Orange County,92865,3,1,metropolitan,6,Office building,1,1,NA,0,1,0,,0,4,1
+179,Hole,Brandon Scott,4/15/21,Thursday,15,4,2021,8856,Rodeo Ct,Indianapolis ,IN,Marion County,46217,1,0,metropolitan,9,Shipping warehouse and parking lot,1,2,1,2,1,0,,0,8,7
+180,Cassidy,Samuel,5/26/21,Wednesday,26,5,2021,101,W Younger Ave,San Jose,CA,Santa Clara County,95110,3,0,metropolitan,9,Light rail yard,1,1,NA,1,1,0,,0,9,1
+181,Crumbley,Ethan,11/30/21,Tuesday,30,11,2021,745,N Oxford Rd,Oxford,MI,Oakland County,48371,1,1,metropolitan,0,High school,1,1,NA,0,0,0,,0,4,7
+182,McLeod,Lyndon,12/27/21,Monday,27,12,2021,56,Broadway,Denver,CO,Denver County,80203,3,0,metropolitan,4,Tattoo shop,1,0,NA,0,0,1,"Victim's home, hotel, other tattoo shop",0,5,2
+183,Gendron,Payton,5/14/22,Saturday,14,5,2022,1275,Jefferson Ave,Buffalo ,NY,Erie County,14208,2,0,metropolitan,4,Grocery store,0,0,NA,2,0,0,,1,10,3
+184,Ramos,Salvador,5/24/22,Tuesday,24,5,2022,715,Old Carrizo Rd,Uvalde,TX,Uvalde County,78801,0,2,micropolitan,0,Elementary school,1,2,0,0,0,1,Shooter and victim's home,0,21,17
+185,Louis,Michael,6/1/22,Wednesday,1,6,2022,6161,S Yale Ave,Tulsa,OK,Tulsa County,74136,0,0,metropolitan,6,Hospital,1,0,NA,0,0,0,,0,4,0
+186,Crimo III,Robert,7/4/22,Monday,4,7,2022,,Central Ave,Highland Park,IL,Lake County,60035,1,1,metropolitan,8,Road (parade route),0,0,NA,1,0,0,,0,7,48
+187,Thompson,Austin,10/13/22,Thursday,13,10,2022,,"Hedingham Suburb, near Osprey Cove Drive and Bay Harbor Drive",Raleigh,NC,Wake County,27604,0,1,metropolitan,8,Neighborhood,1,0,NA,2,0,1,"Shooter and victim's home, walking trail, barn",0,5,2
+188,Aldrich,Anderson ,11/19/22,Saturday,19,11,2022,3430,N Academy Blvd,Colorado Springs,CO,El Paso County,80917,3,0,metropolitan,5,Nightclub,0,0,NA,0,0,0,,0,5,25
+189,Bing,Andre,11/22/22,Tuesday,22,11,2022,1521,Sam's Circle,Chesapeake,VA,City of Chesapeake,23320,0,0,metropolitan,4,Grocery store employee area,1,1,NA,0,1,0,,0,6,6
+190,Tran,Huu Can,1/21/23,Saturday,21,1,2023,122, W Garvey Ave #B,Monterey Park,CA,Los Angeles County,91754,3,0,metropolitan,4,Dance studio ,1,0,NA,2,0,1,Attempted shooting at a second dance studio,0,11,9
+191,Zhao,Chunli ,1/23/23,Monday,23,1,2023,12761,CA-92,Half Moon Bay,CA,San Mateo County,94019,3,2,micropolitan,9,Mushroom farm,1,1,NA,1,1,1,Another mushroom farm,0,7,1
+192,Hale,Audrey / Aiden,3/27/23,Monday,27,3,2023,33, Burton Hills Blvd,Nashville,TN,Davidson County,37215,0,0,metropolitan,0,Christian elementary school,1,2,1,0,0,0,,0,6,0
+193,Sturgeon,Connor,4/10/23,Monday,10,4,2023,333,E Main St Ste 100,Louisville,KY,Jefferson County,40202,0,0,metropolitan,4,Bank,1,1,NA,0,1,0,,0,5,8
+194,Garcia,Mauricio,5/6/23,Saturday,6,5,2023,820, W Stacy Rd,Allen,TX,Collin County,75013,0,1,metropolitan,4,Outlet mall parking lot,0,0,NA,1,0,0,,1,8,7
+195,Carriker,Kimbrady,7/3/23,Monday,3,7,2023,1600 block,South Frazier Street,Philadelphia,PA,Philadelphia County,19143,2,0,metropolitan,8,Road,0,0,NA,2,0,1,"Victim's home, cars",1,5,4
+196,Longmore,Andre,7/15/23,Saturday,15,7,2023,,Dogwood Lakes subdivision,Hampton,GA,Henry County,30228,0,2,metropolitan,8,Neighborhood ,1,0,NA,2,0,1,"Home, road",0,4,3
+197,Card,Robert,10/25/23,Wednesday,25,10,2023,24,Mollison Way,Lewiston,ME,Androscoggin County,4240,2,1,metropolitan,4,Bowling alley,1,0,NA,0,0,1,Restaurant,0,18,13
