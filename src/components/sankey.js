@@ -5,9 +5,10 @@ import { SankeyData } from './sankeyData.js'
 export default function (element) {
   const dataModel = new SankeyData();
   const chart = new SingleContainer(element, {
-    height: 500,
-    width: '100%',
-    margin: { top: 20, bottom: 20 },
+    height: 600,
+    width: element.style.width,
+    // sizing: 'fit_width',
+    // margin: { left: -100 },
     // tooltip: new Tooltip({
     //   triggers: {
     //     // [Sankey.selectors.node]: d => `node ${d.value}`,
@@ -15,16 +16,26 @@ export default function (element) {
     //   },
     // }),
     component: new Sankey({
-      /* Labels */
-      label: n => n.isRootNode ? '' : n.label,
-      subLabel: n => n.isRootNode ? '' : n.percentage,
+      /* Nodes */
       nodeIcon: n => n.expandable ? (n.expanded ? '-' : '+') : '',
       nodeCursor: n => n.expandable ? 'pointer' : 'no-drop',
       nodeAlign: 'left',
-      labelMaxWidth: 250,
-      labelVerticalAlign: 'middle',
       nodeColor: n => n.nodeColor,
       nodeIconColor: 'black',
+      /* Labels */
+      label: n => n.label,
+      subLabel: n => n.isRootNode ? '' : n.percentage,
+      // labelVisibility: n => !n.isRootNode,
+      labelMaxWidth: 210,
+      labelForceWordBreak: false,
+      // labelFit: 'wrap',
+
+      // labelBackground: true,
+      labelVerticalAlign: 'middle',
+      // labelPosition: n => {
+      //   console.log(n, n.isExpanded)
+      //   return n.isExpanded ? 'left' : 'right'
+      // },
       onmouseover: console.log("dfadddddsdfadf"),
       events: {
         [Sankey.selectors.node]: {
@@ -49,10 +60,10 @@ export default function (element) {
         }
         return diff
       },
-      highlightSubtreeOnHover: true,
+      // highlightSubtreeOnHover: true,
       heightNormalizationCoeff: 0.5,
       nodePadding: 22,
-      iterations: 200,
+      // iterations: 200,
     }),
   }, dataModel.data());
 

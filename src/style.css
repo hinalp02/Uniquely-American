@@ -21,7 +21,7 @@ main {
 }
 
 #map {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -121,4 +121,21 @@ p {
   padding: 20px;
 }
 
+#sunburst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+
+}
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+iframe {
+  width: 60%;
+  height: 676px;
+}

@@ -187,6 +187,7 @@ const root = d3.hierarchy(transformData(dataHierarchy), d => d.subgroups)
     n.data = {
       // Update these to add more information per node
       depth: n.depth,
+      isRootNode: n.depth === 0,
       expanded: n.depth === 0,
       sourceGroup: n.depth <= 1 ? n : n.parent.data.sourceGroup,
       path: n.parent?.data.sourceGroup ? n.parent.data.sourceGroup.path(n) : [],

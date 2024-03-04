@@ -59,8 +59,6 @@
       Through this visualization, we attempt to understand the scale and scope of gun violence in the United States. We, as a people, need to confront the reality that these are not disparate events but symptoms of broader societal issues. As we walk through our other visualizations, we seek to find the correlations between who is committing these acts of terror, break down the factors that contribute to why they commit these acts, and take a look at where the shootings are most concentrated.
     </p>
 
-    <h3>Motives</h3>
-    <div id="sankey"></div>
 
     <h3>Sunburst</h3>
     <p> So far our sunburst contains information on who these assailants are at a basic level such as gender, age, race,
@@ -73,9 +71,56 @@
     <!-- <p>Draft can be found at this link  </p> <a href="https://observablehq.com/d/61b744f04387d52a">HERE</a> -->
 
     <div id="sunburst" >
-      <iframe width="100%" height="676" frameborder="0"
-      src="https://observablehq.com/embed/61b744f04387d52a?cells=breadcrumb%2Cviewof+sunburst"></iframe>
+      <div class="iframe-container">
+        <iframe width="2000" height="1200" frameborder="0"
+        src="https://observablehq.com/embed/61b744f04387d52a?cells=breadcrumb"
+          src="https://observablehq.com/embed/61b744f04387d52a?cells=viewof+sunburst">
+        </iframe>
+      </div>
     </div>
+
+    <p>
+      Now that we have gained some small insight into who the perpetrators are, we also asked ourselves what makes these people break. In an attempt to gain insight into the factors that could cause shootings, we've grouped the data into categories that explore the history of the shooters and what their motives could have been. As you navigate the chart below, the percentages come from the unique field data and how it compares to the overall total of offenders. For example, there is a field called mental illness that is nested under Mental Health Factors, Treatment, and History, showing 52.5%. The percentage corresponds to the fields within the data set that have evidence of some kind of mental illness that were encoded with numerical values. The indicators within the data were: “No evidence of psychiatric disorder," “Mood disorder,"  “Thought disorder,"  “Other psychiatric disorder,"  and “Indication of psychiatric disorder but no diagnosis,” numbered from 0 to 4.
+    </p>
+
+    <h3>Motives</h3>
+    <div id="sankey"></div>
+    <p>
+      As you can see from the graph above, there are numerous factors that could be motivating factors in these shootings, but not a single one stood out above the others. The field that corresponded to the often-cited argument that mental illness is the issue, not guns, was only a potential factor for 52.5% of the 197 shootings in the dataset. We can see that it does play a role in some shootings, but not nearly enough to be the proposed solution that politicians claim that it is.
+    </p>
+
+    <h3>Location Skyline</h3>
+
+    <p> The visualization for this currently has some bug issues so it is currently not visible as the frequency of
+    shootings in each locations are not visible and we still need to replace the bars to be different buildings that
+    comprise a skyline. For this visualization, our plan is to have an interactive bar graph about the categories of buildings
+    in which shootings occur: each bar will be apart of a skyline and the silhoutte will be in the shape of a corresponding
+    image, ie: a office building for the office category. Once clicked, it will be highlighted and show further details like
+      how many shootings occured at the location type. </p>
+
+    <!-- <p> Draft can be found at this link </p> <a href="https://observablehq.com/d/047b61a41c458b8c">HERE</a> -->
+      <!-- <div id="locations">
+        <iframe width="100%" height="583" frameborder="0"
+
+          src="https://observablehq.com/embed/047b61a41c458b8c?cells=chart">
+        </iframe>
+      </div> -->
+
+  </main>
+  <footer>
+    <p>
+      <a href="https://gitlab.cs.washington.edu/cse442/24wi/final-project/Uniquely-American">Repository</a>
+      <br>
+      <a href="https://courses.cs.washington.edu/courses/cse442/23wi/">CSE 442 Data Visualization</a>
+      <br>
+      <a href="https://www.washington.edu">University of Washington</a>
+    </p>
+  </footer>
+</body>
+
+</html>
+
+
 
     <!--    <div id="observablehq-breadcrumb-47c3ba54"></div>-->
 <!--    <div id="observablehq-viewof-sunburst-47c3ba54"></div>-->
@@ -90,21 +135,8 @@
 <!--      });-->
 <!--    </script>-->
 
-    <h3>Location Skyline</h3>
 
-    <p> The visualization for this currently has some bug issues so it is currently not visible as the frequency of
-    shootings in each locations are not visible and we still need to replace the bars to be different buildings that
-    comprise a skyline. For this visualization, our plan is to have an interactive bar graph about the categories of buildings
-    in which shootings occur: each bar will be apart of a skyline and the silhoutte will be in the shape of a corresponding
-    image, ie: a office building for the office category. Once clicked, it will be highlighted and show further details like
-      how many shootings occured at the location type. </p>
 
-    <!-- <p> Draft can be found at this link </p> <a href="https://observablehq.com/d/047b61a41c458b8c">HERE</a> -->
-      <div id="locations">
-        <iframe width="100%" height="583" frameborder="0"
-          src="https://observablehq.com/embed/047b61a41c458b8c?cells=chart">
-        </iframe>
-      </div>
 <!--    <div id="observablehq-cadf6b92"></div>-->
 <!--    <p>Credit: <a href="https://observablehq.com/d/047b61a41c458b8c@596">Bar chart by Anusha A Gani&#039;s Workspace</a></p>-->
 
@@ -166,16 +198,3 @@
 <!--      })-->
 
 <!--    </script>-->
-  </main>
-  <footer>
-    <p>
-      <a href="https://gitlab.cs.washington.edu/cse442/24wi/final-project/Uniquely-American">Repository</a>
-      <br>
-      <a href="https://courses.cs.washington.edu/courses/cse442/23wi/">CSE 442 Data Visualization</a>
-      <br>
-      <a href="https://www.washington.edu">University of Washington</a>
-    </p>
-  </footer>
-</body>
-
-</html>
