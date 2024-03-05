@@ -1,39 +1,50 @@
 
-// import * as d3 from 'd3';
+import * as d3 from 'd3';
+
 // precondition: imagedata is an array of objects where each object contains the url of an image and the corresponding tooltip data.
 export default function (element) {
     var imageData = [
-        {url: "src/images/civic.png", tooltipData: "data for image 1"},
-        {url: "src/images/factory.jpeg", tooltipData: "data for image 2"},
-        {url: "src/images/mall.jpeg", tooltipData: "data for image 3"},
-        {url: "src/images/house.jpeg", tooltipData: "data for image 3"},
-        {url: "src/images/office.jpg", tooltipData: "data for image 3"},
-        {url: "src/images/postoffice.png", tooltipData: "data for image 3"},
-        {url: "src/images/restaurant.jpg", tooltipData: "data for image 3"},
-        {url: "src/images/school.jpeg", tooltipData: "data for image 3"},
-        {url: "src/images/soccergoal.jpeg", tooltipData: "data for image 3"},
-        {url: "src/images/university.png", tooltipData: "data for image 3"},
-        {url: "src/images/worship.jpeg", tooltipData: "data for image 3"}
+        {url: require("../images/civic.png"         ), tooltipData: "data for image 1"},
+        {url: require("../images/factory.jpeg"      ), tooltipData: "data for image 2"},
+        {url: require("../images/mall.jpeg"         ), tooltipData: "data for image 3"},
+        {url: require("../images/house.jpeg"        ), tooltipData: "data for image 4"},
+        {url: require("../images/office.jpg"        ), tooltipData: "data for image 5"},
+        {url: require("../images/postoffice.png"    ), tooltipData: "data for image 6"},
+        {url: require("../images/restaurant.jpg"    ), tooltipData: "data for image 7"},
+        {url: require("../images/school.jpeg"       ), tooltipData: "data for image 8"},
+        {url: require("../images/soccergoal.jpeg"   ), tooltipData: "data for image 9"},
+        {url: require("../images/university.png"    ), tooltipData: "data for image 10"},
+        {url: require("../images/worship.jpeg"      ), tooltipData: "data for image 11"}
     ];
     console.log("images and data defined")
+
+
 
 // select the svg element where images will be appended.
     var svg = d3.select("svg");
     console.log("svg for image appending")
+    //var svg = d3.select(element).append('svg');
+
+
 
 // define the width and height of each image.
     var imageWidth = 100;
     var imageHeight = 100;
     console.log("width and height defined")
 
+
 // append a group for each image in the imagedata array.
-    var images = svg.selectAll("g")
+    var images = d3.select(element).selectAll("img")
         .data(imageData)
         .enter()
-        .append("g")
-        .attr("transform", function (d, i) {
-            return "translate(" + (i * (imageWidth + 10)) + ",0)";
-        })
+        .append("img")
+        .attr("src", d => d.url)
+        .attr("width", imageWidth)
+        .attr("height", imageHeight)
+        // .attr("transform", function (d, i) {
+        //     return "translate(" + (i * (imageWidth + 10)) + ",0)";
+        // })
+
         // event listener for mouseover event to show tooltip.
         .on("mouseover", function (d) {
             tooltip.transition()
@@ -59,6 +70,13 @@ export default function (element) {
         .attr("width", imageWidth)
         .attr("height", imageHeight);
     console.log("image appended")
+    // images.append("img")
+    //     .attr("src", function (d) {
+    //         console.log(d)
+    //         return d.url;
+    //     })
+    //     .attr("width", imageWidth)
+    //     .attr("height", imageHeight);
 
 // append a tooltip div to the body.
     var tooltip = d3.select("body")

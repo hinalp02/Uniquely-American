@@ -120,12 +120,10 @@ p {
   padding: 20px;
 }
 
-#sunburst {
+#sunburst, #skyline {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 .iframe-container {
   display: flex;
@@ -137,4 +135,10 @@ p {
 iframe {
   width: 55%;
   height: 750px;
+}
+
+#skyline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
