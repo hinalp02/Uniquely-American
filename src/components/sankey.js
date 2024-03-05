@@ -6,16 +6,18 @@ export default function (element) {
   const dataModel = new SankeyData();
   const chart = new SingleContainer(element, {
     height: 600,
-    width: element.style.width,
-    // sizing: 'fit_width',
-    // margin: { left: -100 },
-    // tooltip: new Tooltip({
-    //   triggers: {
-    //     // [Sankey.selectors.node]: d => `node ${d.value}`,
-    //     // [Sankey.selectors.link]: d => `link ${d.value}`,
-    //   },
-    // }),
+    //width: 1000,
+    //width: element.style.width,
+    sizing: 'extend',
+    //margin: { left: -100, right: -100 },
+    tooltip: new Tooltip({
+      triggers: {
+        [Sankey.selectors.node]: d => `node ${d.value}`,
+        [Sankey.selectors.link]: d => `link ${d.value}`,
+      },
+    }),
     component: new Sankey({
+      nodeHorizontalSpacing: 200,
       /* Nodes */
       nodeIcon: n => n.expandable ? (n.expanded ? '-' : '+') : '',
       nodeCursor: n => n.expandable ? 'pointer' : 'no-drop',
@@ -30,7 +32,7 @@ export default function (element) {
       labelForceWordBreak: false,
       // labelFit: 'wrap',
 
-      // labelBackground: true,
+      //labelBackground: true,
       labelVerticalAlign: 'middle',
       // labelPosition: n => {
       //   console.log(n, n.isExpanded)
@@ -60,7 +62,7 @@ export default function (element) {
         }
         return diff
       },
-      // highlightSubtreeOnHover: true,
+      highlightSubtreeOnHover: true,
       heightNormalizationCoeff: 0.5,
       nodePadding: 22,
       // iterations: 200,
