@@ -3,6 +3,7 @@ import Tooltip from './components/tooltip.js';
 import USAMap from './components/map.js';
 import Sankey from './components/sankey.js';
 import data from './data/ViolenceProjData.json';
+import Skyline from "./components/skyline.js";
 
 function loadMap() {
   const sortedData = data.sort((a, b) => b["Number Killed"] - a["Number Killed"]);
@@ -40,6 +41,12 @@ function loadSankey() {
   const sankey = new Sankey(element)
 }
 
+function loadSkyline() {
+  const element = document.getElementById('skyline');
+  const skyline = new Skyline(element)
+}
+
 loadMap()
 loadSankey()
+loadSkyline()
 
