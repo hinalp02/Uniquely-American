@@ -1,5 +1,5 @@
 
-import * as d3 from 'd3';
+// import * as d3 from 'd3';
 // precondition: imagedata is an array of objects where each object contains the url of an image and the corresponding tooltip data.
 var imageData = [
     { url: "src/images/civic.png", tooltipData: "data for image 1" },
