@@ -21,12 +21,15 @@ main {
 }
 
 #map {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
 #sankey {
   --vis-sankey-icon-size: 14px;
+  width: min-content;
+  margin: 0 auto;
+  height: min-content;
 }
 
 header {
@@ -34,10 +37,6 @@ header {
   width: 75%;
   background: rgba(255, 255, 255, 0.5);
   margin: 1em auto;
-}
-
-main {
-
 }
 
 footer {
@@ -136,6 +135,6 @@ p {
 }
 
 iframe {
-  width: 60%;
-  height: 676px;
+  width: 55%;
+  height: 750px;
 }

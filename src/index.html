@@ -41,18 +41,17 @@
     <h3>Introduction</h3>
     <p>Out of all of the challenges that nations face today, there is one that is uniquely American. While already a leader in gun violence, the United States is faced with an even more dangerous epidemic: mass shootings. Now, this isn't solely an American problem; there are occasional mass shootings in other countries as well, but they are not as numerous, as deadly, and in such varied locations as they are in the U.S.
     </p>
-
     <p>
       Unlike many other countries that have passed stringent regulations and taken steps to curb the number of firearms in circulation, the United States stands out for its unique relationship with guns. The very idea of firearms is embedded in the cultural identity of a significant portion of its population. The right to bear arms is set in stone by the Second Amendment, which encourages well-regulated militias in the defense against government overreach. Unfortunately, this unyielding language prevents common-sense laws for safety and has given rise to a landscape marked by recurring tragedies. Tragedies that unfold in schools, places of worship, and public spaces leave behind a poorly regulated trail of grief and heartbreak.
     </p>
-
     <p>
       The mission of the Violence Project is to gain a comprehensive, quantifiable view of this issue across the map. They have gathered sixty years of data corresponding to 197 mass shootings and broken those down into 180 variables. The goal was to connect the series of seemingly unconnected dots, hoping to reveal a pattern. As we delve into this data, we will showcase various variables from the violence project data in hopes of revealing patterns in this uniquely American issue.
     </p>
+
+    <h3>Locations</h3>
     <p>
       To begin our examination, we've taken the blank canvas of the continental U.S. and overlaid a series of dots of varying sizes. Each dot below is not only a reminder of communities shattered by terror and grief but also an indicator of lives lost. Their size shows the number of innocent lives taken from their loved ones, and their placement tells the stories of American cities and towns forever changed by domestic terrorists.
     </p>
-    <h3>Locations</h3>
     <div id="map"></div>
 
     <p>
@@ -60,7 +59,7 @@
     </p>
 
 
-    <h3>Sunburst</h3>
+    <h3>Demographics</h3>
     <p> So far our sunburst contains information on who these assailants are at a basic level such as gender, age, race,
       education, employment, and firearm proficiency for each of the corresponding six rings. The sunburst provides
       multiple “paths” a user can interact with to learn what percentage of these assailants posses those specific traits
@@ -72,31 +71,30 @@
 
     <div id="sunburst" >
       <div class="iframe-container">
-        <iframe width="2000" height="1200" frameborder="0"
-        src="https://observablehq.com/embed/61b744f04387d52a?cells=breadcrumb"
-          src="https://observablehq.com/embed/61b744f04387d52a?cells=viewof+sunburst">
-        </iframe>
+        <iframe width="100%" height="1000" frameborder="0"
+        src="https://observablehq.com/embed/61b744f04387d52a@773?cells=breadcrumb%2Cviewof+sunburst"></iframe>
       </div>
     </div>
 
-    <p>
-      Now that we have gained some small insight into who the perpetrators are, we also asked ourselves what makes these people break. In an attempt to gain insight into the factors that could cause shootings, we've grouped the data into categories that explore the history of the shooters and what their motives could have been. As you navigate the chart below, the percentages come from the unique field data and how it compares to the overall total of offenders. For example, there is a field called mental illness that is nested under Mental Health Factors, Treatment, and History, showing 52.5%. The percentage corresponds to the fields within the data set that have evidence of some kind of mental illness that were encoded with numerical values. The indicators within the data were: “No evidence of psychiatric disorder," “Mood disorder,"  “Thought disorder,"  “Other psychiatric disorder,"  and “Indication of psychiatric disorder but no diagnosis,” numbered from 0 to 4.
-    </p>
 
     <h3>Motives</h3>
+    <p>
+      Now that we have gained some small insight into who the perpetrators are, we also asked ourselves what makes these people break. In an attempt to gain insight into the factors that could cause shootings, we've grouped the data into categories that explore the history of the shooters and what their motives could have been. As you navigate the chart below, the percentages come from the unique field data and how it compares to the overall total of offenders. For example, there is a field called mental illness that is nested under Mental Health Factors, Treatment, and History, showing 52.5%. The percentage corresponds to the fields within the data set that have evidence of some kind of mental illness that were encoded with numerical values. The indicators within the data were: “No evidence of psychiatric disorder," “Mood disorder,"  “Thought disorder,"  “Other psychiatric disorder,"  and “Indication of psychiatric disorder but no diagnosis,” numbered from 0 to 4. *Note: Holding the curser on a particular node or path will highlight it.
+    </p>
     <div id="sankey"></div>
     <p>
       As you can see from the graph above, there are numerous factors that could be motivating factors in these shootings, but not a single one stood out above the others. The field that corresponded to the often-cited argument that mental illness is the issue, not guns, was only a potential factor for 52.5% of the 197 shootings in the dataset. We can see that it does play a role in some shootings, but not nearly enough to be the proposed solution that politicians claim that it is.
     </p>
 
-    <h3>Location Skyline</h3>
+    <h3>Locations</h3>
 
     <p> The visualization for this currently has some bug issues so it is currently not visible as the frequency of
     shootings in each locations are not visible and we still need to replace the bars to be different buildings that
     comprise a skyline. For this visualization, our plan is to have an interactive bar graph about the categories of buildings
     in which shootings occur: each bar will be apart of a skyline and the silhoutte will be in the shape of a corresponding
     image, ie: a office building for the office category. Once clicked, it will be highlighted and show further details like
-      how many shootings occured at the location type. </p>
+      how many shootings occured at the location type.
+    </p>
 
     <script src="skyline.js" defer></script>
     <style>
@@ -109,12 +107,12 @@
     }
     </style>
     <!-- <p> Draft can be found at this link </p> <a href="https://observablehq.com/d/047b61a41c458b8c">HERE</a> -->
-      <!-- <div id="locations">
+      <div id="locations">
         <iframe width="100%" height="583" frameborder="0"
 
           src="https://observablehq.com/embed/047b61a41c458b8c?cells=chart">
         </iframe>
-      </div> -->
+      </div>
 
   </main>
   <footer>
