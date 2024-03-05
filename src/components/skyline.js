@@ -15,13 +15,16 @@ export default function (element) {
         {url: "src/images/university.png", tooltipData: "data for image 3"},
         {url: "src/images/worship.jpeg", tooltipData: "data for image 3"}
     ];
+    console.log("images and data defined")
 
 // select the svg element where images will be appended.
     var svg = d3.select("svg");
+    console.log("svg for image appending")
 
 // define the width and height of each image.
     var imageWidth = 100;
     var imageHeight = 100;
+    console.log("width and height defined")
 
 // append a group for each image in the imagedata array.
     var images = svg.selectAll("g")
@@ -46,6 +49,7 @@ export default function (element) {
                 .duration(500)
                 .style("opacity", 0);
         });
+    console.log("imagedata array appended")
 
 // append an image element to each group, setting its attributes.
     images.append("image")
@@ -54,12 +58,14 @@ export default function (element) {
         })
         .attr("width", imageWidth)
         .attr("height", imageHeight);
+    console.log("image appended")
 
 // append a tooltip div to the body.
     var tooltip = d3.select("body")
         .append("div")
         .attr("class", "tooltip")
         .style("opacity", 0);
+    console.log("tooltip appended")
 }
 //
 //     let data = FileAttachment("Copy of The Violence Project Mass Shooter Database - Version 8 (January 2024)  - Full Database.csv").csv({typed: "auto"})

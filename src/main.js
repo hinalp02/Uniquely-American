@@ -44,6 +44,7 @@ function loadSankey() {
 function loadSkyline() {
   const element = document.getElementById('skyline');
   const skyline = new Skyline(element)
+  console.log("loadSkyline reached")
 }
 
 loadMap()
