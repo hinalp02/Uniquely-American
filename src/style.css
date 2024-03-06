@@ -122,19 +122,17 @@ p {
 
 #sunburst {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-
-
 }
+
 .iframe-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   width: 100%;
-
 }
 
 iframe {
-  width: 55%;
-  height: 750px;
+  width: 78%;
+  height: 780px;
 }
