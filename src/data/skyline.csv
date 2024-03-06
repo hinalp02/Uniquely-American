@@ -1,12 +1,12 @@
-Location Code,Shooting Count,# of Metropolitan Area Shootings,Percentages of shooting at this location type,Total Number Injured,Total Number Killed
-0,16,14,8.1,201,152
-1,9,8,4.6,109,91
-2,13,11,6.6,124,102
-3,11,9,5.6,62,87
-4,40,36,20.3,270,264
-5,29,26,14.7,237,226
-6,16,15,8.1,50,97
-7,13,9,6.6,40,73
-8,21,16,10.7,1011,166
-9,25,22,12.7,75,139
-10,4,4,2,12,29
+Type of Building,Location Code,Shooting Count,# of Metropolitan Area Shootings,Percentages of shooting at this location type,Total Number Injured,Total Number Killed
+K-12 school,0,16,14,8.1,201,152
+College/university,1,9,8,4.6,109,91
+Government building / place of civic importance,2,13,11,6.6,124,102
+House of worship,3,11,9,5.6,62,87
+Retail,4,40,36,20.3,270,264
+Restaurant/bar/nightclub,5,29,26,14.7,237,226
+Office,6,16,15,8.1,50,97
+Place of residence,7,13,9,6.6,40,73
+Outdoors,8,21,16,10.7,1011,166
+Warehouse/factory,9,25,22,12.7,75,139
+Post office,10,4,4,2,12,29
