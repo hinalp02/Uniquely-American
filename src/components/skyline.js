@@ -4,17 +4,17 @@ import * as d3 from 'd3';
 // precondition: imagedata is an array of objects where each object contains the url of an image and the corresponding tooltip data.
 export default function (element) {
     var imageData = [
-        {url: require("../images/civic.png"         ), tooltipData: "data for image 1"},
-        {url: require("../images/factory.jpeg"      ), tooltipData: "data for image 2"},
-        {url: require("../images/mall.jpeg"         ), tooltipData: "data for image 3"},
-        {url: require("../images/house.jpeg"        ), tooltipData: "data for image 4"},
-        {url: require("../images/office.jpg"        ), tooltipData: "data for image 5"},
-        {url: require("../images/postoffice.png"    ), tooltipData: "data for image 6"},
-        {url: require("../images/restaurant.jpg"    ), tooltipData: "data for image 7"},
-        {url: require("../images/school.jpeg"       ), tooltipData: "data for image 8"},
-        {url: require("../images/soccergoal.jpeg"   ), tooltipData: "data for image 9"},
-        {url: require("../images/university.png"    ), tooltipData: "data for image 10"},
-        {url: require("../images/worship.jpeg"      ), tooltipData: "data for image 11"}
+        {url: require("../images/civic.svg"         ), tooltipData: "data for image 1"},
+        {url: require("../images/warehouse.svg"      ), tooltipData: "data for image 2"},
+        {url: require("../images/mall.svg"         ), tooltipData: "data for image 3"},
+        {url: require("../images/residence.svg"        ), tooltipData: "data for image 4"},
+        {url: require("../images/office.svg"        ), tooltipData: "data for image 5"},
+        {url: require("../images/postoffice.svg"    ), tooltipData: "data for image 6"},
+        {url: require("../images/restaurant.svg"    ), tooltipData: "data for image 7"},
+        {url: require("../images/school.svg"       ), tooltipData: "data for image 8"},
+        {url: require("../images/tent.svg"   ), tooltipData: "data for image 9"},
+        {url: require("../images/university.svg"    ), tooltipData: "data for image 10"},
+        {url: require("../images/church.svg"      ), tooltipData: "data for image 11"}
     ];
     console.log("images and data defined")
 
