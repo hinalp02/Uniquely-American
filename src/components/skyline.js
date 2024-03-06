@@ -16,6 +16,7 @@ export default function (element) {
         {url: require("../images/university.png"    ), tooltipData: "data for image 10"},
         {url: require("../images/worship.jpeg"      ), tooltipData: "data for image 11"}
     ];
+    console.log("images and data defined")
 
     // select the svg element where images will be appended.
     //var svg = d3.select(element).append('svg');
@@ -23,6 +24,7 @@ export default function (element) {
     // define the width and height of each image.
     var imageWidth = 100;
     var imageHeight = 100;
+    console.log("width and height defined")
 
     // append a group for each image in the imagedata array.
     var images = d3.select(element).selectAll("img")
@@ -32,9 +34,9 @@ export default function (element) {
         .attr("src", d => d.url)
         .attr("width", imageWidth)
         .attr("height", imageHeight)
-    // .attr("transform", function (d, i) {
-    //     return "translate(" + (i * (imageWidth + 10)) + ",0)";
-    // })
+        // .attr("transform", function (d, i) {
+        //     return "translate(" + (i * (imageWidth + 10)) + ",0)";
+        // })
 
     // append a tooltip div to the body.
     var tooltip = d3.select("body")
@@ -51,13 +53,14 @@ export default function (element) {
         tooltip.html(d.tooltipData)
             .style("left", (d.clientX) + "px")
             .style("top", (d.clientY - 28) + "px");
-    })
+        })
         // event listener for mouseout event to hide tooltip.
         .on("mouseout", function (d) {
             tooltip.transition()
                 .duration(500)
                 .style("opacity", 0);
         });
+    console.log("imagedata array appended")
 
     // append an image element to each group, setting its attributes.
     // images.append("img")
