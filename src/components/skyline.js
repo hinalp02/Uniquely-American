@@ -1,71 +1,72 @@
 
-// import * as d3 from 'd3';
+import * as d3 from 'd3';
+
 // precondition: imagedata is an array of objects where each object contains the url of an image and the corresponding tooltip data.
 export default function (element) {
     var imageData = [
-        {url: "src/images/civic.png", tooltipData: "data for image 1"},
-        {url: "src/images/factory.jpeg", tooltipData: "data for image 2"},
-        {url: "src/images/mall.jpeg", tooltipData: "data for image 3"},
-        {url: "src/images/house.jpeg", tooltipData: "data for image 3"},
-        {url: "src/images/office.jpg", tooltipData: "data for image 3"},
-        {url: "src/images/postoffice.png", tooltipData: "data for image 3"},
-        {url: "src/images/restaurant.jpg", tooltipData: "data for image 3"},
-        {url: "src/images/school.jpeg", tooltipData: "data for image 3"},
-        {url: "src/images/soccergoal.jpeg", tooltipData: "data for image 3"},
-        {url: "src/images/university.png", tooltipData: "data for image 3"},
-        {url: "src/images/worship.jpeg", tooltipData: "data for image 3"}
+        {url: require("../images/civic.png"         ), tooltipData: "data for image 1"},
+        {url: require("../images/factory.jpeg"      ), tooltipData: "data for image 2"},
+        {url: require("../images/mall.jpeg"         ), tooltipData: "data for image 3"},
+        {url: require("../images/house.jpeg"        ), tooltipData: "data for image 4"},
+        {url: require("../images/office.jpg"        ), tooltipData: "data for image 5"},
+        {url: require("../images/postoffice.png"    ), tooltipData: "data for image 6"},
+        {url: require("../images/restaurant.jpg"    ), tooltipData: "data for image 7"},
+        {url: require("../images/school.jpeg"       ), tooltipData: "data for image 8"},
+        {url: require("../images/soccergoal.jpeg"   ), tooltipData: "data for image 9"},
+        {url: require("../images/university.png"    ), tooltipData: "data for image 10"},
+        {url: require("../images/worship.jpeg"      ), tooltipData: "data for image 11"}
     ];
-    console.log("images and data defined")
 
-// select the svg element where images will be appended.
-    var svg = d3.select("svg");
-    console.log("svg for image appending")
+    // select the svg element where images will be appended.
+    //var svg = d3.select(element).append('svg');
 
-// define the width and height of each image.
+    // define the width and height of each image.
     var imageWidth = 100;
     var imageHeight = 100;
-    console.log("width and height defined")
 
-// append a group for each image in the imagedata array.
-    var images = svg.selectAll("g")
+    // append a group for each image in the imagedata array.
+    var images = d3.select(element).selectAll("img")
         .data(imageData)
         .enter()
-        .append("g")
-        .attr("transform", function (d, i) {
-            return "translate(" + (i * (imageWidth + 10)) + ",0)";
-        })
-        // event listener for mouseover event to show tooltip.
-        .on("mouseover", function (d) {
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", .9);
-            tooltip.html(d.tooltipData)
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-        })
+        .append("img")
+        .attr("src", d => d.url)
+        .attr("width", imageWidth)
+        .attr("height", imageHeight)
+    // .attr("transform", function (d, i) {
+    //     return "translate(" + (i * (imageWidth + 10)) + ",0)";
+    // })
+
+    // append a tooltip div to the body.
+    var tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 1);
+
+    // event listener for mouseover event to show tooltip.
+    images.on("mouseover", function (d) {
+        console.log("Hovered img:", d)
+        tooltip.transition()
+            .duration(200)
+            .style("opacity", .9);
+        tooltip.html(d.tooltipData)
+            .style("left", (d.clientX) + "px")
+            .style("top", (d.clientY - 28) + "px");
+    })
         // event listener for mouseout event to hide tooltip.
         .on("mouseout", function (d) {
             tooltip.transition()
                 .duration(500)
                 .style("opacity", 0);
         });
-    console.log("imagedata array appended")
 
-// append an image element to each group, setting its attributes.
-    images.append("image")
-        .attr("xlink:href", function (d) {
-            return d.url;
-        })
-        .attr("width", imageWidth)
-        .attr("height", imageHeight);
-    console.log("image appended")
-
-// append a tooltip div to the body.
-    var tooltip = d3.select("body")
-        .append("div")
-        .attr("class", "tooltip")
-        .style("opacity", 0);
-    console.log("tooltip appended")
+    // append an image element to each group, setting its attributes.
+    // images.append("img")
+    //     .attr("src", function (d) {
+    //         console.log(d)
+    //         return d.url;
+    //     })
+    //     .attr("width", imageWidth)
+    //     .attr("height", imageHeight);
 }
 //
 //     let data = FileAttachment("Copy of The Violence Project Mass Shooter Database - Version 8 (January 2024)  - Full Database.csv").csv({typed: "auto"})
