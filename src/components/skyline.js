@@ -31,6 +31,7 @@ export default function(element) {
         if (matchingRow) {
             // Set tooltip data for each image using matched JSON data
             image.tooltipData = `
+                Type of Building: ${matchingRow['Type of Building']}<br>
                 Location Code: ${matchingRow['Location Code']}<br>
                 Shooting Count: ${matchingRow['Shooting Count']}<br>
                 # of Metropolitan Area Shootings: ${matchingRow['# of Metropolitan Area Shootings']}<br>
@@ -38,6 +39,7 @@ export default function(element) {
                 Total Number Injured: ${matchingRow['Total Number Injured']}<br>
                 Total Number Killed: ${matchingRow['Total Number Killed']}
             `;
+            // console.log(d.tooltipData);
             console.log("Successfully setting tooltip data using JSON");
         } else {
             // Handle missing data if necessary
@@ -51,7 +53,7 @@ export default function(element) {
     console.log("svg element selected")
 
     // Define the width and height of each image
-    var imageWidth = 75;
+    var imageWidth = 50;
     var imageHeight = 50;
     console.log("dimensions specified");
 
@@ -75,11 +77,14 @@ export default function(element) {
 
 // Event listener for mouseover event to show tooltip
         images.on("mouseover", function(event, d) {
+            console.log(d.tooltipData);
             tooltip.transition()
                 .duration(200)
                 .style("display", "block");
+            console.log(d.tooltipData);
             console.log("responding to mouse")
             tooltip.html(d.tooltipData)
+                .style("visibility", "visible")
                 .style("left", (event.pageX + 10) + "px")
                 .style("top", (event.pageY - 28) + "px");
         })
