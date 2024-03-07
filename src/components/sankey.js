@@ -10,12 +10,12 @@ export default function (element) {
     //width: element.style.width,
     sizing: 'extend',
     //margin: { left: -100, right: -100 },
-    tooltip: new Tooltip({
-      triggers: {
-        [Sankey.selectors.node]: d => `node ${d.value}`,
-        [Sankey.selectors.link]: d => `link ${d.value}`,
-      },
-    }),
+    // tooltip: new Tooltip({
+    //   triggers: {
+    //     [Sankey.selectors.node]: d => `node ${d.value}`,
+    //     [Sankey.selectors.link]: d => `link ${d.value}`,
+    //   },
+    // }),
     component: new Sankey({
       nodeHorizontalSpacing: 200,
       /* Nodes */
