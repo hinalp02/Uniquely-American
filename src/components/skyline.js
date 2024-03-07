@@ -56,7 +56,8 @@ export default function(element) {
     console.log("dimensions specified");
 
     // Append images to the SVG
-    var images = svg.selectAll("img")
+    // var images = svg.selectAll("img")
+    var images = d3.select(element).selectAll("img")
         .data(imageData)
         .enter()
         .append("img")
@@ -72,31 +73,12 @@ export default function(element) {
         .style("opacity", 0);
     console.log("appended tooltip to body");
 
-
-    // Event listener for mouseover event to show tooltip
-    // images.on("mouseover", function(d) {
-    //     tooltip.transition()
-    //         .duration(200)
-    //         .style("display", "block");
-    //     tooltip.html(d.tooltipData)
-    //         .style("left", (d3.event.pageX + 10) + "px")
-    //         .style("top", (d3.event.pageY - 28) + "px");
-    // })
-    // images.on("mouseover", function(event, d) {
-    //     tooltip.transition()
-    //         .duration(200)
-    //         .style("display", "block");
-    //     tooltip.html(d.tooltipData)
-    //         .style("left", (event.pageX + 10) + "px")
-    //         .style("top", (event.pageY - 28) + "px");
-    // });
-    //
-
 // Event listener for mouseover event to show tooltip
         images.on("mouseover", function(event, d) {
             tooltip.transition()
                 .duration(200)
                 .style("display", "block");
+            console.log("responding to mouse")
             tooltip.html(d.tooltipData)
                 .style("left", (event.pageX + 10) + "px")
                 .style("top", (event.pageY - 28) + "px");

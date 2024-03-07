@@ -4,6 +4,29 @@ import USAMap from './components/map.js';
 import Sankey from './components/sankey.js';
 import data from './data/ViolenceProjData.json';
 import Skyline from "./components/skyline.js";
+import skylineData from "./data/skyline.json";
+
+function loadSkyline() {
+  const element = document.getElementById('skyline');
+  const skyline = new Skyline(element)
+  // const tooltip = new Tooltip(container)
+  //
+  // skyline.images.on("mouseover", function(event, d) {
+  //   tooltip.transition()
+  //       .duration(200)
+  //       .style("display", "block");
+  //   tooltip.html(d.tooltipData)
+  //       .style("left", (event.pageX + 10) + "px")
+  //       .style("top", (event.pageY - 28) + "px");
+  // })
+  //     // Event listener for mouseout event to hide tooltip
+  // skyline.images.on("mouseout", function(event, d) {
+  //       tooltip.transition()
+  //           .duration(500)
+  //           .style("display", "none");
+  //     });
+  console.log("loadSkyline reached")
+}
 
 function loadMap() {
   const sortedData = data.sort((a, b) => b["Number Killed"] - a["Number Killed"]);
@@ -41,11 +64,6 @@ function loadSankey() {
   const sankey = new Sankey(element)
 }
 
-function loadSkyline() {
-  const element = document.getElementById('skyline');
-  const skyline = new Skyline(element)
-  console.log("loadSkyline reached")
-}
 
 loadMap()
 loadSankey()
