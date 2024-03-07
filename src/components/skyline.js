@@ -1,83 +1,290 @@
 import * as d3 from 'd3';
+import jsonData from '../data/skyline.json'; // Import JSON data
 
 export default function(element) {
-    // Load CSV data
-    d3.csv("../data/skyline.csv").then(function(csvData) {
-        // Load image data
-        var imageData = [
-            {url: require("../images/k-12_school.svg"), id: 0},
-            {url: require("../images/college_university.svg"), id: 1},
-            {url: require("../images/government_building_place_of_civic_importance.svg"), id: 2},
-            {url: require("../images/house_of_worship.svg"), id: 3},
-            {url: require("../images/retail.svg"), id: 4},
-            {url: require("../images/restaurant_bar_nightclub.svg"), id: 5},
-            {url: require("../images/office.svg"), id: 6},
-            {url: require("../images/place_of_residence.svg"), id: 7},
-            {url: require("../images/outdoors.svg"), id: 8},
-            {url: require("../images/warehouse_factory.svg"), id: 9},
-            {url: require("../images/post_office.svg"), id: 10},
-        ];
+    console.log("Entering function");
 
-        // Match CSV data with image data based on a common identifier (Location Code)
-        imageData.forEach(function(image) {
-            var matchingRow = csvData.find(function(row) {
-                return +row['Location Code'] === image.id; // Convert to number for comparison
-            });
-            if (matchingRow) {
-                // Set tooltip data for each image using matched CSV data
-                image.tooltipData = `
-                    Location Code: ${matchingRow['Location Code']}<br>
-                    Shooting Count: ${matchingRow['Shooting Count']}<br>
-                    # of Metropolitan Area Shootings: ${matchingRow['# of Metropolitan Area Shootings']}<br>
-                    Percentages of shooting at this location type: ${matchingRow['Percentages of shooting at this location type']}<br>
-                    Total Number Injured: ${matchingRow['Total Number Injured']}<br>
-                    Total Number Killed: ${matchingRow['Total Number Killed']}
-                `;
-            } else {
-                // Handle missing data if necessary
-                image.tooltipData = 'No data available';
-            }
+    // Load image data
+    var imageData = [
+        {url: require("../images/k-12_school.svg"), id: 0},
+        {url: require("../images/college_university.svg"), id: 1},
+        {url: require("../images/government_building_place_of_civic_importance.svg"), id: 2},
+        {url: require("../images/house_of_worship.svg"), id: 3},
+        {url: require("../images/retail.svg"), id: 4},
+        {url: require("../images/restaurant_bar_nightclub.svg"), id: 5},
+        {url: require("../images/office.svg"), id: 6},
+        {url: require("../images/place_of_residence.svg"), id: 7},
+        {url: require("../images/outdoors.svg"), id: 8},
+        {url: require("../images/warehouse_factory.svg"), id: 9},
+        {url: require("../images/post_office.svg"), id: 10},
+    ];
+    console.log("imagedata loaded")
+
+    // Match JSON data with image data based on a common identifier (Location Code)
+    imageData.forEach(function(image) {
+        console.log("Processing image", image.id);
+        var matchingRow = jsonData.find(function(row) {
+            console.log("Matching row:", row);
+            return row['Location Code'] === image.id;
         });
-
-        // Select the SVG element where images will be appended
-        var svg = d3.select(element).append('svg');
-
-        // Define the width and height of each image
-        var imageWidth = 75;
-        var imageHeight = 50;
-
-        // Append images to the SVG
-        var images = svg.selectAll("img")
-            .data(imageData)
-            .enter()
-            .append("img")
-            .attr("src", function(d) { return d.url; })
-            .attr("width", imageWidth)
-            .attr("height", imageHeight);
-
-        // Append a tooltip div to the body
-        var tooltip = d3.select("body")
-            .append("div")
-            .attr("class", "tooltip")
-            .style("opacity", 0);
-
-        // Event listener for mouseover event to show tooltip
-        images.on("mouseover", function(d) {
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", .9);
-            tooltip.html(d.tooltipData)
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px");
-        })
-            // Event listener for mouseout event to hide tooltip
-            .on("mouseout", function(d) {
-                tooltip.transition()
-                    .duration(500)
-                    .style("opacity", 0);
-            });
+        console.log("Matching Row:", matchingRow);
+        if (matchingRow) {
+            // Set tooltip data for each image using matched JSON data
+            image.tooltipData = `
+                Location Code: ${matchingRow['Location Code']}<br>
+                Shooting Count: ${matchingRow['Shooting Count']}<br>
+                # of Metropolitan Area Shootings: ${matchingRow['# of Metropolitan Area Shootings']}<br>
+                Percentages of shooting at this location type: ${matchingRow['Percentages of shooting at this location type']}<br>
+                Total Number Injured: ${matchingRow['Total Number Injured']}<br>
+                Total Number Killed: ${matchingRow['Total Number Killed']}
+            `;
+            console.log("Successfully setting tooltip data using JSON");
+        } else {
+            // Handle missing data if necessary
+            image.tooltipData = 'No data available';
+            console.log("Image has no data available")
+        }
     });
+
+    // Select the SVG element where images will be appended
+    var svg = d3.select(element).append('svg');
+    console.log("svg element selected")
+
+    // Define the width and height of each image
+    var imageWidth = 75;
+    var imageHeight = 50;
+    console.log("dimensions specified");
+
+    // Append images to the SVG
+    var images = svg.selectAll("img")
+        .data(imageData)
+        .enter()
+        .append("img")
+        .attr("src", function(d) { return d.url; })
+        .attr("width", imageWidth)
+        .attr("height", imageHeight);
+    console.log("appended images to svg")
+
+    // Append a tooltip div to the body
+    var tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+    console.log("appended tooltip to body");
+
+    // Event listener for mouseover event to show tooltip
+    images.on("mouseover", function(d) {
+        tooltip.transition()
+            .duration(200)
+            .style("display", "block");
+        tooltip.html(d.tooltipData)
+            .style("left", (d3.event.pageX + 10) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");
+    })
+        // Event listener for mouseout event to hide tooltip
+        .on("mouseout", function(d) {
+            tooltip.transition()
+                .duration(500)
+                .style("display", "none");
+        });
+    console.log("event listener");
 }
+
+// import * as d3 from 'd3';
+//
+// export default function(element) {
+//     // Load CSV data
+//     d3.csv("../data/skyline.csv").then(function(csvData) {
+//         // Convert numeric values to numbers
+//         console.log("CSV Data:", csvData); // Log parsed CSV data
+//         csvData.forEach(function(d) {
+//             d['Location Code'] = +d['Location Code'];
+//             d['Shooting Count'] = +d['Shooting Count'];
+//             d['# of Metropolitan Area Shootings'] = +d['# of Metropolitan Area Shootings'];
+//             d['Percentages of shooting at this location type'] = +d['Percentages of shooting at this location type'];
+//             d['Total Number Injured'] = +d['Total Number Injured'];
+//             d['Total Number Killed'] = +d['Total Number Killed'];
+//         });
+//
+//         // Load image data
+//         var imageData = [
+//             {url: require("../images/k-12_school.svg"), id: 0},
+//             {url: require("../images/college_university.svg"), id: 1},
+//             {url: require("../images/government_building_place_of_civic_importance.svg"), id: 2},
+//             {url: require("../images/house_of_worship.svg"), id: 3},
+//             {url: require("../images/retail.svg"), id: 4},
+//             {url: require("../images/restaurant_bar_nightclub.svg"), id: 5},
+//             {url: require("../images/office.svg"), id: 6},
+//             {url: require("../images/place_of_residence.svg"), id: 7},
+//             {url: require("../images/outdoors.svg"), id: 8},
+//             {url: require("../images/warehouse_factory.svg"), id: 9},
+//             {url: require("../images/post_office.svg"), id: 10},
+//         ];
+//         console.log("imagedata loaded")
+//
+//         // Match CSV data with image data based on a common identifier (Location Code)
+//         imageData.forEach(function(image) {
+//             var matchingRow = csvData.find(function(row) {
+//                 console.log(+row['Location Code']);
+//                 console.log(+row['Location Code'] === image.id);
+//                 console.log("matching row return");
+//                 return row['Location Code'] === image.id;
+//             });
+//             if (matchingRow) {
+//                 // Set tooltip data for each image using matched CSV data
+//                 image.tooltipData = `
+//                     Location Code: ${matchingRow['Location Code']}<br>
+//                     Shooting Count: ${matchingRow['Shooting Count']}<br>
+//                     # of Metropolitan Area Shootings: ${matchingRow['# of Metropolitan Area Shootings']}<br>
+//                     Percentages of shooting at this location type: ${matchingRow['Percentages of shooting at this location type']}<br>
+//                     Total Number Injured: ${matchingRow['Total Number Injured']}<br>
+//                     Total Number Killed: ${matchingRow['Total Number Killed']}
+//                 `;
+//                 console.log("Successfully setting tooltip data using csv");
+//             } else {
+//                 // Handle missing data if necessary
+//                 image.tooltipData = 'No data available';
+//                 console.log("image has no data available")
+//             }
+//         });
+//
+//         // Select the SVG element where images will be appended
+//         var svg = d3.select(element).append('svg');
+//         console.log("svg element selected")
+//
+//         // Define the width and height of each image
+//         var imageWidth = 75;
+//         var imageHeight = 50;
+//         console.log("dimensions specified");
+//
+//         // Append images to the SVG
+//         var images = svg.selectAll("img")
+//             .data(imageData)
+//             .enter()
+//             .append("img")
+//             .attr("src", function(d) { return d.url; })
+//             .attr("width", imageWidth)
+//             .attr("height", imageHeight);
+//         console.log("appended images to svg")
+//
+//         // Append a tooltip div to the body
+//         var tooltip = d3.select("body")
+//             .append("div")
+//             .attr("class", "tooltip")
+//             .style("opacity", 0);
+//         console.log("appended tooltip to body");
+//
+//         // Event listener for mouseover event to show tooltip
+//         images.on("mouseover", function(d) {
+//             tooltip.transition()
+//                 .duration(200)
+//                 .style("display", "block");
+//             tooltip.html(d.tooltipData)
+//                 .style("left", (d3.event.pageX + 10) + "px")
+//                 .style("top", (d3.event.pageY - 28) + "px");
+//         })
+//             // Event listener for mouseout event to hide tooltip
+//             .on("mouseout", function(d) {
+//                 tooltip.transition()
+//                     .duration(500)
+//                     .style("display", "none");
+//             });
+//         console.log("event listener");
+//     });
+// }
+
+// import * as d3 from 'd3';
+//
+// export default function(element) {
+//     // Load CSV data
+//     d3.csv("../data/skyline.csv").then(function(csvData) {
+//         // Load image data
+//         var imageData = [
+//             {url: require("../images/k-12_school.svg"), id: 0},
+//             {url: require("../images/college_university.svg"), id: 1},
+//             {url: require("../images/government_building_place_of_civic_importance.svg"), id: 2},
+//             {url: require("../images/house_of_worship.svg"), id: 3},
+//             {url: require("../images/retail.svg"), id: 4},
+//             {url: require("../images/restaurant_bar_nightclub.svg"), id: 5},
+//             {url: require("../images/office.svg"), id: 6},
+//             {url: require("../images/place_of_residence.svg"), id: 7},
+//             {url: require("../images/outdoors.svg"), id: 8},
+//             {url: require("../images/warehouse_factory.svg"), id: 9},
+//             {url: require("../images/post_office.svg"), id: 10},
+//         ];
+//         console.log("imagedata loaded")
+//
+//         // Match CSV data with image data based on a common identifier (Location Code)
+//         imageData.forEach(function(image) {
+//             var matchingRow = csvData.find(function(row) {
+//                 console.log(+row['Location Code']);
+//                 console.log(+row['Location Code'] === image.id);
+//                 console.log("matching row return");
+//                 return +row['Location Code'] === image.id; // Convert to number for comparison
+//             });
+//             if (matchingRow) {
+//                 // Set tooltip data for each image using matched CSV data
+//                 image.tooltipData = `
+//                     Location Code: ${matchingRow['Location Code']}<br>
+//                     Shooting Count: ${matchingRow['Shooting Count']}<br>
+//                     # of Metropolitan Area Shootings: ${matchingRow['# of Metropolitan Area Shootings']}<br>
+//                     Percentages of shooting at this location type: ${matchingRow['Percentages of shooting at this location type']}<br>
+//                     Total Number Injured: ${matchingRow['Total Number Injured']}<br>
+//                     Total Number Killed: ${matchingRow['Total Number Killed']}
+//                 `;
+//                 console.log('Location Code');
+//                 console.log("Successfully setting tooltip data using csv");
+//             } else {
+//                 // Handle missing data if necessary
+//                 image.tooltipData = 'No data available';
+//                 console.log("image has no data available")
+//             }
+//         });
+//
+//         // Select the SVG element where images will be appended
+//         var svg = d3.select(element).append('svg');
+//         console.log("svg element selected")
+//
+//         // Define the width and height of each image
+//         var imageWidth = 75;
+//         var imageHeight = 50;
+//         console.log("dimensions specified");
+//
+//         // Append images to the SVG
+//         var images = svg.selectAll("img")
+//             .data(imageData)
+//             .enter()
+//             .append("img")
+//             .attr("src", function(d) { return d.url; })
+//             .attr("width", imageWidth)
+//             .attr("height", imageHeight);
+//         console.log("appended images to svg")
+//
+//         // Append a tooltip div to the body
+//         var tooltip = d3.select("body")
+//             .append("div")
+//             .attr("class", "tooltip")
+//             .style("opacity", 0);
+//         console.log("appended tooltip to body");
+//
+//         // Event listener for mouseover event to show tooltip
+//         images.on("mouseover", function(d) {
+//             tooltip.transition()
+//                 .duration(200)
+//                 .style("display", "block");
+//             tooltip.html(d.tooltipData)
+//                 .style("left", (d3.event.pageX + 10) + "px")
+//                 .style("top", (d3.event.pageY - 28) + "px");
+//         })
+//             // Event listener for mouseout event to hide tooltip
+//             .on("mouseout", function(d) {
+//                 tooltip.transition()
+//                     .duration(500)
+//                     .style("display", "none");
+//             });
+//         console.log("event listener");
+//     });
+// }
 
 // // VERSION THAT WORKS WITH NO TOOLTIP
 // import * as d3 from 'd3';
