@@ -41,7 +41,7 @@ export default function (element) {
 
     });
     // define the width and height of each image.
-    var imageWidth = 50;
+    var imageWidth = 75;
     var imageHeight = 75;
 
     // append a group for each image in the imagedata array.
@@ -84,6 +84,85 @@ export default function (element) {
     });
 
 }
+
+
+// not working stretching
+// import * as d3 from 'd3';
+// import jsonData from '../data/skyline.json';
+//
+// export default function (element) {
+//     var imageData = [
+//         { category: "K-12 Schools", url: require("../images/k-12_school.svg"), id: 0, stretch: false },
+//         { category: "Colleges & Univesities", url: require("../images/college_university.svg"), id: 1, stretch: true, stretchValue: 1.5 },
+//         { category: "Government Buildings", url: require("../images/government_building_place_of_civic_importance.svg"), id: 2, stretch: false },
+//         { category: "Places of Worship", url: require("../images/house_of_worship.svg"), id: 3, stretch: true, stretchValue: 2 },
+//         { category: "Retail", url: require("../images/retail.svg"), id: 4, stretch: false },
+//         { category: "Bars & Restaurants", url: require("../images/restaurant_bar_nightclub.svg"), id: 5, stretch: true, stretchValue: 1.8 },
+//         { category: "Offices", url: require("../images/office.svg"), id: 6, stretch: false },
+//         { category: "Residential", url: require("../images/place_of_residence.svg"), id: 7, stretch: false },
+//         { category: "Outdoors", url: require("../images/outdoors.svg"), id: 8, stretch: true, stretchValue: 1.3 },
+//         { category: "Warehouses & Factories", url: require("../images/warehouse_factory.svg"), id: 9, stretch: false },
+//         { category: "Post Offices", url: require("../images/post_office.svg"), id: 10, stretch: false }
+//     ];
+//
+//     var maxImageHeight = d3.max(imageData, d => d.stretch ? d.stretchValue * 75 : 75); // Calculate the maximum height of all images
+//
+//     imageData.forEach(function(image) {
+//         var matchingRow = jsonData.find(function(row) {
+//             return row['Location Code'] === image.id;
+//         });
+//         if (matchingRow) {
+//             image.tooltipData = `
+//                 Type of Building: ${matchingRow['Type of Building']}<br>
+//                 Shooting Count: ${matchingRow['Shooting Count']}<br>
+//                 # of Metropolitan Area Shootings: ${matchingRow['# of Metropolitan Area Shootings']}<br>
+//                 Percentages of shooting at this location type: ${matchingRow['Percentages of shooting at this location type']}<br>
+//                 Total Number Injured: ${matchingRow['Total Number Injured']}<br>
+//                 Total Number Killed: ${matchingRow['Total Number Killed']}
+//             `;
+//         } else {
+//             image.tooltipData = 'No data available';
+//         }
+//     });
+//
+//     var images = d3.select(element).selectAll("svg")
+//         .data(imageData)
+//         .enter()
+//         .append("svg")
+//         .attr("data-src", d => d.url)
+//         .attr("width", 50)
+//         .attr("height", d => d.stretch ? d.stretchValue * 75 : 75) // Set height based on stretching
+//         .attr("y", d => maxImageHeight - (d.stretch ? d.stretchValue * 75 : 75)) // Adjust vertical position
+//         .attr("fill", '#222')
+//         .style("stroke", "none")
+//         .each(function(d) {
+//             if (d.stretch) {
+//                 d3.select(this).style("transform", "scaleY(" + d.stretchValue + ")"); // Stretch vertically with different values
+//             }
+//         });
+//
+//     var tooltip = d3.select(document.body)
+//         .append("div")
+//         .attr('class', 'tooltip');
+//
+//     images.on("mouseover", function (evt, d) {
+//         d3.select(this)
+//             .attr("fill", "red")
+//             .style("transform", d.stretch ? "scaleY(" + (d.stretchValue * 2) + ")" : null); // Adjust vertical stretch on mouseover for images that should stretch
+//         tooltip.classed("active", true)
+//             .html(d.tooltipData)
+//             .style("left", (evt.pageX) + "px")
+//             .style("top", (evt.pageY - 28) + "px");
+//     });
+//
+//     images.on("mouseout", function (d) {
+//         d3.select(this)
+//             .attr("fill", "#222")
+//             .style("transform", null); // Restore original vertical stretch on mouseout
+//         tooltip.classed("active", false);
+//     });
+// }
+
 
 // import * as d3 from 'd3';
 // import jsonData from '../data/skyline.json'; // Import JSON data
