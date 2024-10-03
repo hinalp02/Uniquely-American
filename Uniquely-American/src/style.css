@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 18px/1.5 "Avenir", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    color: #222;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#map {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#sankey {
+    --vis-sankey-icon-size: 14px;
+    width: min-content;
+    margin: 0 auto;
+    height: min-content;
+}
+
+header {
+    border-bottom: 2px solid #ccc;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 1em auto;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+footer > ul {
+    text-align: center;
+}
+
+footer > span {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.title-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+header > div {
+    font-size: 0.75em;
+}
+
+.subheading {
+    color: #666;
+}
+
+.citation {
+    margin-top: 0.5em;
+}
+
+h1 {
+    margin-bottom: 0;
+    justify-content: left;
+    color: #492a7c;
+}
+h3 {
+    justify-content: left;
+    margin-bottom: 0;
+    color: #492a7c;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tooltip {
+    pointer-events: none;
+    position: absolute;
+    text-align: left;
+    width: auto;
+    padding: 8px;
+    font-size: 12px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.tooltip.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#points .highlighted {
+    fill: black;
+    opacity: 1;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 20px;
+}
+
+#sunburst {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#skyline {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+iframe {
+    width: 78%;
+    height: 780px;
+}
+

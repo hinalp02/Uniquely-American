@@ -1,0 +1,101 @@
+[
+  {
+    "Type of Building": "K-12 school",
+    "Location Code": 0,
+    "Shooting Count": 16,
+    "# of Metropolitan Area Shootings": 14,
+    "Percentages of shooting at this location type": 8.1,
+    "Total Number Injured": 201,
+    "Total Number Killed": 152
+  },
+  {
+    "Type of Building": "College/university",
+    "Location Code": 1,
+    "Shooting Count": 9,
+    "# of Metropolitan Area Shootings": 8,
+    "Percentages of shooting at this location type": 4.6,
+    "Total Number Injured": 109,
+    "Total Number Killed": 91
+  },
+  {
+    "Type of Building": "Government building / place of civic importance",
+    "Location Code": 2,
+    "Shooting Count": 13,
+    "# of Metropolitan Area Shootings": 11,
+    "Percentages of shooting at this location type": 6.6,
+    "Total Number Injured": 124,
+    "Total Number Killed": 102
+  },
+  {
+    "Type of Building": "House of worship",
+    "Location Code": 3,
+    "Shooting Count": 11,
+    "# of Metropolitan Area Shootings": 9,
+    "Percentages of shooting at this location type": 5.6,
+    "Total Number Injured": 62,
+    "Total Number Killed": 87
+  },
+  {
+    "Type of Building": "Retail",
+    "Location Code": 4,
+    "Shooting Count": 40,
+    "# of Metropolitan Area Shootings": 36,
+    "Percentages of shooting at this location type": 20.3,
+    "Total Number Injured": 270,
+    "Total Number Killed": 264
+  },
+  {
+    "Type of Building": "Restaurant/bar/nightclub",
+    "Location Code": 5,
+    "Shooting Count": 29,
+    "# of Metropolitan Area Shootings": 26,
+    "Percentages of shooting at this location type": 14.7,
+    "Total Number Injured": 237,
+    "Total Number Killed": 226
+  },
+  {
+    "Type of Building": "Office",
+    "Location Code": 6,
+    "Shooting Count": 16,
+    "# of Metropolitan Area Shootings": 15,
+    "Percentages of shooting at this location type": 8.1,
+    "Total Number Injured": 50,
+    "Total Number Killed": 97
+  },
+  {
+    "Type of Building": "Place of residence",
+    "Location Code": 7,
+    "Shooting Count": 13,
+    "# of Metropolitan Area Shootings": 9,
+    "Percentages of shooting at this location type": 6.6,
+    "Total Number Injured": 40,
+    "Total Number Killed": 73
+  },
+  {
+    "Type of Building": "Outdoors",
+    "Location Code": 8,
+    "Shooting Count": 21,
+    "# of Metropolitan Area Shootings": 16,
+    "Percentages of shooting at this location type": 10.7,
+    "Total Number Injured": 1011,
+    "Total Number Killed": 166
+  },
+  {
+    "Type of Building": "Warehouse/factory",
+    "Location Code": 9,
+    "Shooting Count": 25,
+    "# of Metropolitan Area Shootings": 22,
+    "Percentages of shooting at this location type": 12.7,
+    "Total Number Injured": 75,
+    "Total Number Killed": 139
+  },
+  {
+    "Type of Building": "Post office",
+    "Location Code": 10,
+    "Shooting Count": 4,
+    "# of Metropolitan Area Shootings": 4,
+    "Percentages of shooting at this location type": 2,
+    "Total Number Injured": 12,
+    "Total Number Killed": 29
+  }
+]
