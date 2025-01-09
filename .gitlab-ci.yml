@@ -1,11 +1,9 @@
 pages:
   stage: deploy
   script:
+    - echo "Copying files to public directory..."
     - mkdir public
-    - cp -r src/data public/data
-    - cp index.html public
-    - cp style.css public
-    - cp main.js public
+    - cp -r index.html style.css src public
   artifacts:
     paths:
       - public
