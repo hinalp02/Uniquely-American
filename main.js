@@ -3,11 +3,11 @@ import Tooltip from './components/tooltip.js';
 import USAMap from './components/map.js';
 import Sankey from './components/sankey.js';
 //import data from './data/ViolenceProjData.json';
-fetch('./src/data/ViolenceProjData.json')
+fetch('./data/ViolenceProjData.json')
   .then((response) => response.json())
   .then((data) => loadMap(data))
   .catch((error) => console.error('Error loading ViolenceProjData:', error));
-import Skyline from "./src/components/skyline.js";
+import Skyline from "./components/skyline.js";
 //import skylineData from "./data/skyline.json";
 fetch('./data/skyline.json')
   .then((response) => response.json())
