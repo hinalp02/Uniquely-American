@@ -1,17 +1,13 @@
-image: node:latest
-
 pages:
   stage: deploy
   script:
-    - echo "Installing dependencies..."
-    - npm install
-    - echo "Building the project..."
-    - npm run build
-    - echo "Deploying..."
+    - mkdir public
+    - cp -r src/data public/data
+    - cp index.html public
+    - cp style.css public
+    - cp main.js public
   artifacts:
     paths:
       - public
-  tags:
-    - Pages
   only:
     - main
